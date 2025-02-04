@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Service Hotel Juanillo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+
+<body class="bg-light">
+
+    <!-- Encabezado -->
+    <header class="bg-dark text-white text-center py-4">
+        <h1 class="fw-bold">Juanillo Hoteles</h1>
+    </header>
+
+    <!-- Navbar con contador de eventos -->
+    <nav class="navbar navbar-light bg-white shadow-sm px-4">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Menú de navegación -->
+            <div class="d-flex gap-3">
+                <a class="btn btn-outline-primary" href="#"><i class="bi bi-plus-circle me-1"></i> Nuevo Registro</a>
+                <a class="btn btn-outline-secondary" href="#"><i class="bi bi-list-ul me-1"></i> Listado de
+                    Registros</a>
+            </div>
+
+            <!-- Contador de eventos -->
+            <div class="d-flex align-items-center gap-3">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-clipboard-check text-primary fs-4 me-1"></i>
+                    <span class="fw-bold text-primary">10</span>
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-exclamation-triangle-fill text-warning fs-4 me-1"></i>
+                    <span class="fw-bold text-warning">3</span>
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-exclamation-diamond-fill text-danger fs-4 me-1"></i>
+                    <span class="fw-bold text-danger">1</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-4">
+        <h2 class="text-center mb-4">Listado de Registros</h2>
+
+        <!-- Acordeón de registros -->
+        <div class="accordion" id="accordionRegistros">
+
+            <!-- Registro Ordinario -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#registro1">
+                        <i class="bi bi-clipboard-check text-primary me-2"></i>
+                        <strong>203 - Revisión de minibar</strong>
+                    </button>
+                </h2>
+                <div id="registro1" class="accordion-collapse collapse" data-bs-parent="#accordionRegistros">
+                    <div class="accordion-body">
+                        <p><strong>Descripción:</strong> El minibar de la habitación necesita reposición.</p>
+                        <p><strong>Fecha:</strong> 01/02/2025 - <strong>Hora:</strong> 14:30</p>
+                        <p class="text-muted">Fecha Creación: 01/02/2025 - Hora Creación: 13:45</p>
+
+                        <hr>
+
+                        <h6>Datos del Empleado</h6>
+                        <p><strong>Nombre:</strong> Juan Pérez</p>
+                        <p><strong>Departamento:</strong> Mantenimiento</p>
+
+                        <hr>
+
+                        <h6>Datos del Cliente</h6>
+                        <p><strong>Nombre:</strong> Carlos Ramírez</p>
+                        <p><strong>Apellidos:</strong> Fernández Gómez</p>
+                        <p><strong>Agencia:</strong> Viajes Global</p>
+                        <p><strong>Teléfono:</strong> +34 600 123 456</p>
+
+                        <hr>
+
+                        <h6>Datos del Hotel</h6>
+                        <p><strong>Sucursal:</strong> Juanillo Málaga</p>
+
+                        <button class="btn btn-outline-danger btn-sm"><i class="bi bi-trash"></i> Eliminar</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Incidencia -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#incidencia1">
+                        <i class="bi bi-exclamation-triangle-fill text-warning me-2"></i>
+                        <strong>312 - Avería en aire acondicionado</strong>
+                    </button>
+                </h2>
+                <div id="incidencia1" class="accordion-collapse collapse" data-bs-parent="#accordionRegistros">
+                    <div class="accordion-body">
+                        <p><strong>Descripción:</strong> El aire acondicionado no enfría correctamente.</p>
+                        <p><strong>Fecha:</strong> 02/02/2025 - <strong>Hora:</strong> 09:45</p>
+                        <p class="text-muted">Fecha Creación: 02/02/2025 - Hora Creación: 09:30</p>
+
+                        <hr>
+
+                        <h6>Datos del Empleado</h6>
+                        <p><strong>Nombre:</strong> María López</p>
+                        <p><strong>Departamento:</strong> Servicio Técnico</p>
+
+                        <hr>
+
+                        <h6>Datos del Cliente</h6>
+                        <p><strong>Nombre:</strong> Antonio García</p>
+                        <p><strong>Apellidos:</strong> Torres Muñoz</p>
+                        <p><strong>Agencia:</strong> Booking</p>
+                        <p><strong>Teléfono:</strong> +34 650 987 654</p>
+
+                        <hr>
+
+                        <h6>Datos del Hotel</h6>
+                        <p><strong>Sucursal:</strong> Juanillo Madrid</p>
+
+
+                        <button class="btn btn-outline-danger btn-sm"><i class="bi bi-trash"></i> Eliminar</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alerta -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#alerta1">
+                        <i class="bi bi-exclamation-diamond-fill text-danger me-2"></i>
+                        <strong>505 - Huésped con síntomas</strong>
+                    </button>
+                </h2>
+                <div id="alerta1" class="accordion-collapse collapse" data-bs-parent="#accordionRegistros">
+                    <div class="accordion-body">
+                        <p><strong>Descripción:</strong> El huésped presenta fiebre y síntomas gripales.</p>
+                        <p><strong>Fecha:</strong> 03/02/2025 - <strong>Hora:</strong> 22:10</p>
+                        <p class="text-muted">Fecha Creación: 03/02/2025 - Hora Creación: 21:50</p>
+
+                        <hr>
+
+                        <h6>Datos del Empleado</h6>
+                        <p><strong>Nombre:</strong> Pedro García</p>
+                        <p><strong>Departamento:</strong> Seguridad</p>
+
+                        <hr>
+
+                        <h6>Datos del Cliente</h6>
+                        <p><strong>Nombre:</strong> Luis Martín</p>
+                        <p><strong>Apellidos:</strong> Gómez Pérez</p>
+                        <p><strong>Agencia:</strong> Expedia</p>
+                        <p><strong>Teléfono:</strong> +34 677 543 210</p>
+
+                        <hr>
+
+                        <h6>Datos del Hotel</h6>
+                        <p><strong>Sucursal:</strong> Juanillo Barcelona</p>
+
+
+                        <button class="btn btn-outline-danger btn-sm"><i class="bi bi-trash"></i> Eliminar</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
