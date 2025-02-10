@@ -7,19 +7,19 @@
         <h5 class="card-title">Datos Sucursal</h5>
         <div class="mb-3">
             <label for="hotel" class="form-label">Hotel:</label>
-            <select id="hotel" class="form-select"  (change)="onSucursalChange(($event))">
+            <select id="hotel" formControlName="nombreHotel" class="form-select"  (change)="onSucursalChange(($event)) ">
                 <option value="">Seleccione un hotel</option>
-                @for (sucursal of sucurcales; track $index) {
-                  <option value="{{sucursal.codigo}}">{{sucursal.nombre}}</option>
-                }
 
+            @for (sucursal of sucurcales; track sucursal.nombre) {
+                  <option value="{{sucursal.codigo}}">{{sucursal.nombre}}</option>
+                } 
             </select>
         </div>
         <div class="mb-3">
             <label for="empleado" class="form-label">Empleado:</label>
             <select id="empleado" formControlName="empleado" class="form-select">
                 <option value="">Seleccione un empleado</option>
-                @for (empleado of empleados; track empleado.id) {
+                @for (empleado of empleados; track empleado.nombre) {
                   <option value="{{empleado.id}}">{{empleado.nombre}}</option>
                 }
             </select>

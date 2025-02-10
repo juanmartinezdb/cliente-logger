@@ -18,21 +18,38 @@ export class FormularioComponent {
   sucurcales : Sucursal[] = [];
   habitaciones : Habitacion[] = [];
   datosService: DatosService = inject(DatosService);
-  formH : FormGroup;
+  formH: FormGroup;
 
+  
   constructor(private fb: FormBuilder) {
+
     this.datosService.getAllEmpleados().then((empleados: Empleado[]) => {
       this.empleados = empleados;
     });
     this.datosService.getAllSucursales().then((sucurcales : Sucursal[])=> {
       this.sucurcales = sucurcales;
+    });
 
       this.formH= this.fb.group({
-
+        nombreHotel: ['', [Validators.required]],
+        empleado: ['', [Validators.required]],
+        nombreCliente: ['', [Validators.required]],
+        apellidosCliente: ['', [Validators.required]],
+        habitacion: ['', [Validators.required]],
+        agencia: ['', [Validators.required]],
+        telefono: ['', [Validators.required]],
+        tituloEvento: ['', [Validators.required]],
+        descripcionEvento: ['', [Validators.required]],
+        tipoRegistro: ['', [Validators.required]],
+        predefinidos: ['', [Validators.required]],
+        fechaRegistrada: ['', [Validators.required]],
+        horaRegistrada: ['', [Validators.required]],
+  
       });
-    })
+
 
   }
+
     onSucursalChange(event : Event){
       const codigo = (event.target as HTMLSelectElement).value;
       const sucusalChecked = this.sucurcales.find(s => s.codigo===codigo);
@@ -42,7 +59,7 @@ export class FormularioComponent {
     }
 
     submit() {
-      console.log(this.form);
+      console.log(this.formH);
 
     }
 

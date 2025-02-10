@@ -1,24 +1,25 @@
+import { Habitacion } from "./habitacion.model";
+import { Empleado } from "./persona.model";
+import { Predefinida } from "./predefinida.model";
+
 export interface Registro {
 
     hotel: string;        
-    empleado: string;     
+    empleado: Empleado;     
   
     nombreC: string;
     apellidoC: string;
-    habitacionC: string;
+    habitacionC: Habitacion;
     agencia?: string;     
     telefonoC: string;
   
-
     tituloE: string;
     descripcionE: string;
     categoria: 'registro' | 'incidencia' | 'alerta';
-    tipoE: string;        
+    predefinido: Predefinida;        
     fechaE: string;       
-    horaE: string;        
+    horaE: string;     
   
- 
-    fechaCreacion: string; 
-    departamento: string; 
+    creacion: Date; 
   }
   
