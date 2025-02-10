@@ -9,27 +9,22 @@ import { Sucursal } from '../model/sucursal.model';
 
 export class DatosService {
 
-  predefinidas = 'http://localhost:3000/predefinidas';
-  empleados = 'http://localhost:3000/empleados';
-  sucursales = 'http://localhost:3000/sucursales';
+  predefinidasUrl = 'http://localhost:3000/predefinidas';
+  empleadosUrl = 'http://localhost:3000/empleados';
+  sucursalesUrl = 'http://localhost:3000/sucursales';
 
-async getAllPredefinidas(): Promise<Predefinida[]> {
-  const data = await fetch(this.predefinidas);
-  return (await data.json()) ?? [];
-}
+  async getAllPredefinidas(): Promise<Predefinida[]> {
+    const data = await fetch(this.predefinidasUrl);
+    return (await data.json()) ?? [];
+  }
 
-async getAllEmpleados(): Promise<Empleado[]> {
-  const data = await fetch(this.empleados);
-  return (await data.json()) ?? [];
-}
+  async getAllEmpleados(): Promise<Empleado[]> {
+    const data = await fetch(this.empleadosUrl);
+    return (await data.json()) ?? [];
+  }
+  async getAllSucursales(): Promise<Sucursal[]> {
+    const data = await fetch(this.sucursalesUrl);
+    return (await data.json()) ?? [];
+  }
 
-async getAllSucursales(): Promise<Sucursal[]> {
-  const data = await fetch(this.sucursales);
-  return (await data.json()) ?? [];
-}
-
-async getPredefinidaByTipo(tipo: string): Promise<Predefinida[]> {
-  const data = await fetch(`${this.predefinidas}?tipo=${tipo}`);
-  return (await data.json()) ?? [];
-}
 }

@@ -1,4 +1,5 @@
-<form>
+
+<form [formGroup]="formH" (submit)="submit()">
     <h2 class="mb-4 text-center">Registro de Eventos</h2>
 
     <!-- Datos Sucursal -->
@@ -6,16 +7,21 @@
         <h5 class="card-title">Datos Sucursal</h5>
         <div class="mb-3">
             <label for="hotel" class="form-label">Hotel:</label>
-            <select id="hotel" class="form-select">
+            <select id="hotel" class="form-select"  (change)="onSucursalChange(($event))">
                 <option value="">Seleccione un hotel</option>
-                <!-- Opciones dinámicas -->
+                @for (sucursal of sucurcales; track $index) {
+                  <option value="{{sucursal.codigo}}">{{sucursal.nombre}}</option>
+                }
+
             </select>
         </div>
         <div class="mb-3">
             <label for="empleado" class="form-label">Empleado:</label>
-            <select id="empleado" class="form-select">
+            <select id="empleado" formControlName="empleado" class="form-select">
                 <option value="">Seleccione un empleado</option>
-                <!-- Opciones dinámicas -->
+                @for (empleado of empleados; track empleado.id) {
+                  <option value="{{empleado.id}}">{{empleado.nombre}}</option>
+                }
             </select>
         </div>
     </div>
@@ -26,39 +32,43 @@
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="nombreC" class="form-label">Nombre:</label>
-                <input type="text" id="nombreC" class="form-control" placeholder="Nombre">
+                <input type="text" id="nombreC" class="form-control" placeholder="Nombre" formControlName="nombreCliente">
             </div>
             <div class="col-md-6 mb-3">
                 <label for="apellidoC" class="form-label">Apellidos:</label>
-                <input type="text" id="apellidoC" class="form-control" placeholder="Apellidos">
+                <input type="text" id="apellidoC" class="form-control" placeholder="Apellidos" formControlName="apellidosCliente">
             </div>
         </div>
         <div class="mb-3">
             <label for="habitacionC" class="form-label">Habitación:</label>
-            <select id="habitacionC" class="form-select">
+            <select id="habitacionC" class="form-select" formControlName="habitacion">
                 <option value="">Número</option>
                 <!-- Opciones dinámicas -->
+                 @for (habitacion of habitaciones; track habitacion.id){
+                  <option [value]="habitacion.id">{{habitacion.numero}} - {{habitacion.tipo}}</option>
+                 }
             </select>
         </div>
         <div class="mb-3">
             <label class="form-label">Agencia:</label>
             <div class="form-check form-check-inline">
-                <input type="radio" id="agenciaSi" name="agencia" class="form-check-input">
+                <input type="radio" id="agenciaSi" name="agencia" class="form-check-input" formControlName="agencia">
                 <label for="agenciaSi" class="form-check-label">Sí</label>
             </div>
             <div class="form-check form-check-inline">
-                <input type="radio" id="agenciaNo" name="agencia" class="form-check-input">
+                <input type="radio" id="agenciaNo" name="agencia" class="form-check-input" formControlName="agencia">
                 <label for="agenciaNo" class="form-check-label">No</label>
             </div>
         </div>
         <!-- si marca que si en la agencia -->
+
         <!-- <div class="mb-3">
             <label for="agenciaT" class="form-label">Nombre de la Agencia:</label>
             <input type="text" id="agenciaT" class="form-control" placeholder="Nombre de la Agencia">
         </div> -->
         <div class="mb-3">
             <label for="telefonoC" class="form-label">Teléfono:</label>
-            <input type="text" id="telefonoC" class="form-control" placeholder="Teléfono">
+            <input type="text" id="telefonoC" class="form-control" placeholder="Teléfono" formControlName="telefono">
         </div>
     </div>
 
@@ -67,27 +77,27 @@
         <h5 class="card-title">Datos del Evento</h5>
         <div class="mb-3">
             <label for="tituloE" class="form-label">Título:</label>
-            <input type="text" id="tituloE" class="form-control" placeholder="Título">
+            <input type="text" id="tituloE" class="form-control" placeholder="Título" formControlName="tituloEvento">
         </div>
         <div class="mb-3">
             <label for="descripcionE" class="form-label">Descripción:</label>
-            <textarea id="descripcionE" class="form-control" rows="3"></textarea>
+            <textarea id="descripcionE" class="form-control" rows="3" formControlName="descripcionEvento"></textarea>
         </div>
         <div class="mb-3">
             <label class="form-label">Categoría:</label>
             <div class="d-flex gap-3 flex-warp">
                 <div class="form-check">
-                    <input type="radio" id="tipoRegistro" name="tipo" class="form-check-input">
+                    <input type="radio" id="tipoRegistro" name="tipo" class="form-check-input" formControlName="tipoRegistro">
                     <label for="tipoRegistro" class="form-check-label"><i
                             class="bi bi-clipboard-check me-2"></i> Registro Ordinario</label>
                 </div>
                 <div class="form-check">
-                    <input type="radio" id="tipoIncidencia" name="tipo" class="form-check-input">
+                    <input type="radio" id="tipoIncidencia" name="tipo" class="form-check-input" formControlName="tipoRegistro">
                     <label for="tipoIncidencia" class="form-check-label"><i
                             class="bi bi-exclamation-triangle me-2"></i>Incidencia</label>
                 </div>
                 <div class="form-check">
-                    <input type="radio" id="tipoAlerta" name="tipo" class="form-check-input">
+                    <input type="radio" id="tipoAlerta" name="tipo" class="form-check-input" formControlName="tipoRegistro">
                     <label for="tipoAlerta" class="form-check-label"><i
                             class="bi bi-exclamation-diamond-fill me-2"></i>Alerta</label>
                 </div>
@@ -95,7 +105,7 @@
         </div>
         <div class="mb-3">
             <label for="tipoE" class="form-label">Tipo de Evento:</label>
-            <select id="tipoE" class="form-select">
+            <select id="tipoE" class="form-select" formControlName="predefinidos">
                 <option value="" selected disabled>Selecciona una categoría primero</option>
                 <!-- Opciones dinámicas -->
 
@@ -104,13 +114,14 @@
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="fechaE" class="form-label">Fecha:</label>
-                <input type="date" id="fechaE" class="form-control">
+                <input type="date" id="fechaE" class="form-control" formControlName="fechaRegistrada">
             </div>
             <div class="col-md-6 mb-3">
                 <label for="horaE" class="form-label">Hora:</label>
-                <input type="time" id="horaE" class="form-control">
+                <input type="time" id="horaE" class="form-control" formControlName="horaRegistrada">
             </div>
         </div>
+        <!-- Mirar como meter un par de inputs hidden, no se si hacerlo aquí o si se tiene que hacer la logica directamente en el ts -->
     </div>
 
     <!-- Botón de envío -->
