@@ -1,2230 +1,3389 @@
 {
-    "predefinidas": [
+  "registros": [
+    {
+      "hotel": "MAL01",
+      "empleado": "2",
+      "nombreC": "Carlos",
+      "apellidoC": "Fernández López",
+      "habitacionC": "101",
+      "telefonoC": "+34 654 321 987",
+      "tituloE": "Revisión de minibar",
+      "descripcionE": "Se ha repuesto el minibar con bebidas y snacks.",
+      "categoria": "registro",
+      "predefinido": "r1",
+      "fechaE": "2025-02-10",
+      "horaE": "14:30",
+      "creacion": "2025-02-10T14:30:00Z"
+    },
+    {
+      "hotel": "MAD01",
+      "empleado": "4",
+      "nombreC": "Lucía",
+      "apellidoC": "Sánchez Pérez",
+      "habitacionC": "202",
+      "agencia": "Travel World",
+      "telefonoC": "+34 612 345 678",
+      "tituloE": "Cambio de toallas",
+      "descripcionE": "Se han cambiado las toallas a petición del huésped.",
+      "categoria": "registro",
+      "predefinido": "r2",
+      "fechaE": "2025-02-09",
+      "horaE": "10:00",
+      "creacion": "2025-02-09T10:00:00Z"
+    },
+    {
+      "hotel": "BCN02",
+      "empleado": "7",
+      "nombreC": "David",
+      "apellidoC": "Ruiz García",
+      "habitacionC": "305",
+      "telefonoC": "+34 678 901 234",
+      "tituloE": "Avería en aire acondicionado",
+      "descripcionE": "El aire acondicionado de la habitación no funciona correctamente.",
+      "categoria": "incidencia",
+      "predefinido": "i1",
+      "fechaE": "2025-02-08",
+      "horaE": "18:45",
+      "creacion": "2025-02-08T18:45:00Z"
+    },
+    {
+      "hotel": "SEV01",
+      "empleado": "3",
+      "nombreC": "Elena",
+      "apellidoC": "Mendoza Torres",
+      "habitacionC": "410",
+      "telefonoC": "+34 620 987 654",
+      "tituloE": "Fuga de agua en baño",
+      "descripcionE": "Se ha detectado una fuga de agua en el baño de la habitación.",
+      "categoria": "incidencia",
+      "predefinido": "i3",
+      "fechaE": "2025-02-07",
+      "horaE": "08:20",
+      "creacion": "2025-02-07T08:20:00Z"
+    },
+    {
+      "hotel": "VAL01",
+      "empleado": "5",
+      "nombreC": "Manuel",
+      "apellidoC": "Navarro Gil",
+      "habitacionC": "512",
+      "agencia": "Luxury Travel",
+      "telefonoC": "+34 600 456 789",
+      "tituloE": "Tarjeta de acceso no funciona",
+      "descripcionE": "El huésped indica que su tarjeta de habitación no abre la puerta.",
+      "categoria": "incidencia",
+      "predefinido": "i6",
+      "fechaE": "2025-02-06",
+      "horaE": "22:10",
+      "creacion": "2025-02-06T22:10:00Z"
+    },
+    {
+      "hotel": "MAL02",
+      "empleado": "9",
+      "nombreC": "Sara",
+      "apellidoC": "Hernández Ortiz",
+      "habitacionC": "608",
+      "telefonoC": "+34 630 789 012",
+      "tituloE": "Emergencia médica de huésped",
+      "descripcionE": "Un huésped requiere asistencia médica urgente en su habitación.",
+      "categoria": "alerta",
+      "predefinido": "a1",
+      "fechaE": "2025-02-05",
+      "horaE": "03:15",
+      "creacion": "2025-02-05T03:15:00Z"
+    },
+    {
+      "id": "701b",
+      "hotel": "BCN02",
+      "empleado": "1",
+      "nombreC": "Pepe",
+      "apellidoC": "Perez",
+      "habitacionC": "8",
+      "agencia": "dfhfh",
+      "telefonoC": "234353465345",
+      "tituloE": "dfwe45t435",
+      "descripcionE": "sdgfsrg",
+      "categoria": "registro",
+      "predefinido": "r7",
+      "fechaE": "2025-02-06",
+      "horaE": "12:33",
+      "creacion": "2025-02-10T19:24:50.718Z"
+    }
+  ],
+  "predefinidas": [
+    {
+      "id": "r1",
+      "tipo": "registro",
+      "nombre": "Revisión de minibar",
+      "descripcion": "El minibar necesita reposición de bebidas y snacks."
+    },
+    {
+      "id": "r2",
+      "tipo": "registro",
+      "nombre": "Cambio de toallas",
+      "descripcion": "El huésped ha solicitado un cambio de toallas en su habitación."
+    },
+    {
+      "id": "r3",
+      "tipo": "registro",
+      "nombre": "Limpieza programada",
+      "descripcion": "Limpieza diaria programada en la habitación del huésped."
+    },
+    {
+      "id": "r4",
+      "tipo": "registro",
+      "nombre": "Revisión de piscina",
+      "descripcion": "Se necesita control de pH y limpieza en la piscina del hotel."
+    },
+    {
+      "id": "r5",
+      "tipo": "registro",
+      "nombre": "Reserva de taxi",
+      "descripcion": "El huésped ha solicitado un taxi a una hora específica."
+    },
+    {
+      "id": "r6",
+      "tipo": "registro",
+      "nombre": "Llamada de despertador",
+      "descripcion": "El huésped ha solicitado ser despertado a una hora determinada."
+    },
+    {
+      "id": "r7",
+      "tipo": "registro",
+      "nombre": "Gestión de equipaje",
+      "descripcion": "El huésped necesita ayuda con su equipaje en la entrada/salida."
+    },
+    {
+      "id": "r8",
+      "tipo": "registro",
+      "nombre": "Mantenimiento de jardín",
+      "descripcion": "Revisión y poda de plantas en las áreas verdes del hotel."
+    },
+    {
+      "id": "r9",
+      "tipo": "registro",
+      "nombre": "Control de iluminación",
+      "descripcion": "Verificación de luces en pasillos y zonas comunes."
+    },
+    {
+      "id": "r10",
+      "tipo": "registro",
+      "nombre": "Mantenimiento de ascensores",
+      "descripcion": "Revisión programada del sistema de ascensores del hotel."
+    },
+    {
+      "id": "r11",
+      "tipo": "registro",
+      "nombre": "Entrega de paquete",
+      "descripcion": "Un huésped ha recibido un paquete en la recepción."
+    },
+    {
+      "id": "r12",
+      "tipo": "registro",
+      "nombre": "Pedido de comida a la habitación",
+      "descripcion": "El huésped ha solicitado servicio de room service."
+    },
+    {
+      "id": "r13",
+      "tipo": "registro",
+      "nombre": "Ajuste de termostato",
+      "descripcion": "El huésped solicita un ajuste de temperatura en su habitación."
+    },
+    {
+      "id": "r14",
+      "tipo": "registro",
+      "nombre": "Revisión de gimnasio",
+      "descripcion": "Mantenimiento y limpieza de equipos en el gimnasio del hotel."
+    },
+    {
+      "id": "r15",
+      "tipo": "registro",
+      "nombre": "Control de ruidos en zonas comunes",
+      "descripcion": "Supervisión de nivel de ruido en pasillos y áreas comunes."
+    },
+    {
+      "id": "i1",
+      "tipo": "incidencia",
+      "nombre": "Avería en aire acondicionado",
+      "descripcion": "El aire acondicionado de la habitación no funciona correctamente."
+    },
+    {
+      "id": "i2",
+      "tipo": "incidencia",
+      "nombre": "Televisión sin señal",
+      "descripcion": "El huésped reporta que la televisión no tiene señal o no enciende."
+    },
+    {
+      "id": "i3",
+      "tipo": "incidencia",
+      "nombre": "Fuga de agua en baño",
+      "descripcion": "Se ha detectado una fuga de agua en el baño de la habitación."
+    },
+    {
+      "id": "i4",
+      "tipo": "incidencia",
+      "nombre": "Pérdida de objeto personal",
+      "descripcion": "El huésped ha extraviado un objeto en las instalaciones del hotel."
+    },
+    {
+      "id": "i5",
+      "tipo": "incidencia",
+      "nombre": "Ruidos molestos en habitación",
+      "descripcion": "El huésped reporta ruidos excesivos provenientes de otra habitación."
+    },
+    {
+      "id": "i6",
+      "tipo": "incidencia",
+      "nombre": "Tarjeta de acceso no funciona",
+      "descripcion": "El huésped indica que su tarjeta de habitación no abre la puerta."
+    },
+    {
+      "id": "i7",
+      "tipo": "incidencia",
+      "nombre": "Avería en ascensor",
+      "descripcion": "El ascensor ha dejado de funcionar y requiere revisión inmediata."
+    },
+    {
+      "id": "i8",
+      "tipo": "incidencia",
+      "nombre": "Caja fuerte bloqueada",
+      "descripcion": "El huésped no puede abrir la caja fuerte de su habitación."
+    },
+    {
+      "id": "i9",
+      "tipo": "incidencia",
+      "nombre": "Calefacción defectuosa",
+      "descripcion": "El huésped reporta que la calefacción de su habitación no funciona."
+    },
+    {
+      "id": "i10",
+      "tipo": "incidencia",
+      "nombre": "Problema de conexión WiFi",
+      "descripcion": "El huésped tiene dificultades para conectarse a la red WiFi del hotel."
+    },
+    {
+      "id": "i11",
+      "tipo": "incidencia",
+      "nombre": "Mal olor en habitación",
+      "descripcion": "El huésped reporta un olor desagradable en la habitación."
+    },
+    {
+      "id": "i12",
+      "tipo": "incidencia",
+      "nombre": "Falta de agua caliente",
+      "descripcion": "No hay agua caliente en la ducha de la habitación."
+    },
+    {
+      "id": "i13",
+      "tipo": "incidencia",
+      "nombre": "Problema con cortinas",
+      "descripcion": "El huésped indica que las cortinas de la habitación están dañadas."
+    },
+    {
+      "id": "i14",
+      "tipo": "incidencia",
+      "nombre": "Baño atascado",
+      "descripcion": "Se ha detectado un problema de obstrucción en el baño."
+    },
+    {
+      "id": "i5",
+      "tipo": "incidencia",
+      "nombre": "Puerta de habitación dañada",
+      "descripcion": "La cerradura o la puerta presenta problemas de funcionamiento."
+    },
+    {
+      "id": "a1",
+      "tipo": "alerta",
+      "nombre": "Emergencia médica de huésped",
+      "descripcion": "Un huésped requiere asistencia médica urgente."
+    },
+    {
+      "id": "a2",
+      "tipo": "alerta",
+      "nombre": "Corte de energía en el hotel",
+      "descripcion": "Se ha producido un apagón en varias áreas del hotel."
+    },
+    {
+      "id": "a3",
+      "tipo": "alerta",
+      "nombre": "Discusión fuerte en habitación",
+      "descripcion": "Se reporta una pelea o altercado dentro de una habitación."
+    },
+    {
+      "id": "a4",
+      "tipo": "alerta",
+      "nombre": "Fuga de gas detectada",
+      "descripcion": "Se ha percibido un fuerte olor a gas en el hotel."
+    },
+    {
+      "id": "a5",
+      "tipo": "alerta",
+      "nombre": "Persona sospechosa en el hotel",
+      "descripcion": "Se ha identificado a una persona con actitud sospechosa en las instalaciones."
+    },
+    {
+      "id": "a6",
+      "tipo": "alerta",
+      "nombre": "Principio de incendio en cocina",
+      "descripcion": "Se ha detectado humo en el área de cocina del hotel."
+    },
+    {
+      "id": "a7",
+      "tipo": "alerta",
+      "nombre": "Huésped con comportamiento agresivo",
+      "descripcion": "Se reporta un huésped alterado o agresivo en el hotel."
+    },
+    {
+      "id": "a8",
+      "tipo": "alerta",
+      "nombre": "Fallo en alarma de incendios",
+      "descripcion": "El sistema de detección de incendios ha dejado de funcionar."
+    },
+    {
+      "id": "a9",
+      "tipo": "alerta",
+      "nombre": "Puerta de emergencia bloqueada",
+      "descripcion": "Se ha detectado que una salida de emergencia está obstruida."
+    },
+    {
+      "id": "a10",
+      "tipo": "alerta",
+      "nombre": "Desperfecto estructural grave",
+      "descripcion": "Se ha detectado una grieta en la estructura del hotel."
+    },
+    {
+      "id": "a11",
+      "tipo": "alerta",
+      "nombre": "Huésped desaparecido",
+      "descripcion": "Un familiar ha reportado que un huésped no ha regresado al hotel."
+    },
+    {
+      "id": "a12",
+      "tipo": "alerta",
+      "nombre": "Fuga de agua en calderas",
+      "descripcion": "Se detectó una fuga grave en la sala de calderas del hotel."
+    },
+    {
+      "id": "a13",
+      "tipo": "alerta",
+      "nombre": "Evacuación por amenaza externa",
+      "descripcion": "Se requiere evacuación del hotel por amenaza externa."
+    },
+    {
+      "id": "a14",
+      "tipo": "alerta",
+      "nombre": "Derrumbe en zona común",
+      "descripcion": "Se ha producido un derrumbe parcial en una zona del hotel."
+    },
+    {
+      "id": "a15",
+      "tipo": "alerta",
+      "nombre": "Robos en habitaciones",
+      "descripcion": "Se han reportado robos en varias habitaciones del hotel."
+    }
+  ],
+  "empleados": [
+    {
+      "id": "1",
+      "nombre": "Manolo Pérez García",
+      "telefono": "+34 600 123 456",
+      "email": "manolo.perez@hoteljuanillo.com",
+      "departamento": "Mantenimiento"
+    },
+    {
+      "id": "2",
+      "nombre": "María López Fernández",
+      "telefono": "+34 610 234 567",
+      "email": "maria.lopez@hoteljuanillo.com",
+      "departamento": "Recepción"
+    },
+    {
+      "id": "3",
+      "nombre": "Pedro García Sánchez",
+      "telefono": "+34 620 345 678",
+      "email": "pedro.garcia@hoteljuanillo.com",
+      "departamento": "Seguridad"
+    },
+    {
+      "id": "4",
+      "nombre": "Carmen Santos Ruíz",
+      "telefono": "+34 630 456 789",
+      "email": "carmen.santos@hoteljuanillo.com",
+      "departamento": "Limpieza"
+    },
+    {
+      "id": "5",
+      "nombre": "Javier Torres Martín",
+      "telefono": "+34 640 567 890",
+      "email": "javier.torres@hoteljuanillo.com",
+      "departamento": "Conserjería"
+    },
+    {
+      "id": "6",
+      "nombre": "Elena Gómez Pérez",
+      "telefono": "+34 650 678 901",
+      "email": "elena.gomez@hoteljuanillo.com",
+      "departamento": "Reservas"
+    },
+    {
+      "id": "7",
+      "nombre": "Antonio Fernández Díaz",
+      "telefono": "+34 660 789 012",
+      "email": "antonio.fernandez@hoteljuanillo.com",
+      "departamento": "Cocina"
+    },
+    {
+      "id": "8",
+      "nombre": "Lucía Méndez Ortiz",
+      "telefono": "+34 670 890 123",
+      "email": "lucia.mendez@hoteljuanillo.com",
+      "departamento": "Atención al cliente"
+    },
+    {
+      "id": "9",
+      "nombre": "Fernando Herrera López",
+      "telefono": "+34 680 901 234",
+      "email": "fernando.herrera@hoteljuanillo.com",
+      "departamento": "Gerencia"
+    },
+    {
+      "id": "10",
+      "nombre": "Isabel Navarro Gil",
+      "telefono": "+34 690 012 345",
+      "email": "isabel.navarro@hoteljuanillo.com",
+      "departamento": "Marketing"
+    }
+  ],
+  "sucursales": [
+    {
+      "codigo": "MAL01",
+      "nombre": "Juanillo Málaga Centro",
+      "telefono": "+34 952 123 456",
+      "ubicacion": "Málaga, Calle Larios 12",
+      "habitaciones": [
         {
-          "id" : "r1",
-            "tipo": "registro",
-            "nombre": "Revisión de minibar",
-            "descripcion": "El minibar necesita reposición de bebidas y snacks."
+          "id": 1,
+          "numero": "101",
+          "tipo": "Suite",
+          "precio_noche": 150,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "r2",
-            "tipo": "registro",
-            "nombre": "Cambio de toallas",
-            "descripcion": "El huésped ha solicitado un cambio de toallas en su habitación."
+          "id": 2,
+          "numero": "102",
+          "tipo": "Doble",
+          "precio_noche": 90,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "r3",
-            "tipo": "registro",
-            "nombre": "Limpieza programada",
-            "descripcion": "Limpieza diaria programada en la habitación del huésped."
+          "id": 3,
+          "numero": "103",
+          "tipo": "Individual",
+          "precio_noche": 60,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "r4",
-            "tipo": "registro",
-            "nombre": "Revisión de piscina",
-            "descripcion": "Se necesita control de pH y limpieza en la piscina del hotel."
+          "id": 4,
+          "numero": "104",
+          "tipo": "Familiar",
+          "precio_noche": 120,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Cocina",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "r5",
-            "tipo": "registro",
-            "nombre": "Reserva de taxi",
-            "descripcion": "El huésped ha solicitado un taxi a una hora específica."
+          "id": 5,
+          "numero": "105",
+          "tipo": "Suite Ejecutiva",
+          "precio_noche": 200,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "r6",
-            "tipo": "registro",
-            "nombre": "Llamada de despertador",
-            "descripcion": "El huésped ha solicitado ser despertado a una hora determinada."
+          "id": 6,
+          "numero": "106",
+          "tipo": "Doble",
+          "precio_noche": 95,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
         },
         {
-          "id" : "r7",
-            "tipo": "registro",
-            "nombre": "Gestión de equipaje",
-            "descripcion": "El huésped necesita ayuda con su equipaje en la entrada/salida."
+          "id": 7,
+          "numero": "107",
+          "tipo": "Individual",
+          "precio_noche": 55,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
         },
         {
-          "id" : "r8",
-            "tipo": "registro",
-            "nombre": "Mantenimiento de jardín",
-            "descripcion": "Revisión y poda de plantas en las áreas verdes del hotel."
+          "id": 8,
+          "numero": "108",
+          "tipo": "Triple",
+          "precio_noche": 110,
+          "capacidad": 3,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "r9",
-            "tipo": "registro",
-            "nombre": "Control de iluminación",
-            "descripcion": "Verificación de luces en pasillos y zonas comunes."
+          "id": 9,
+          "numero": "109",
+          "tipo": "Suite",
+          "precio_noche": 180,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "r10",
-            "tipo": "registro",
-            "nombre": "Mantenimiento de ascensores",
-            "descripcion": "Revisión programada del sistema de ascensores del hotel."
+          "id": 10,
+          "numero": "110",
+          "tipo": "Doble",
+          "precio_noche": 85,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "r11",
-            "tipo": "registro",
-            "nombre": "Entrega de paquete",
-            "descripcion": "Un huésped ha recibido un paquete en la recepción."
+          "id": 11,
+          "numero": "111",
+          "tipo": "Familiar",
+          "precio_noche": 130,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "r12",
-            "tipo": "registro",
-            "nombre": "Pedido de comida a la habitación",
-            "descripcion": "El huésped ha solicitado servicio de room service."
+          "id": 12,
+          "numero": "112",
+          "tipo": "Doble",
+          "precio_noche": 100,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
         },
         {
-          "id" : "r13",
-            "tipo": "registro",
-            "nombre": "Ajuste de termostato",
-            "descripcion": "El huésped solicita un ajuste de temperatura en su habitación."
+          "id": 13,
+          "numero": "113",
+          "tipo": "Suite Lujo",
+          "precio_noche": 250,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "r14",
-            "tipo": "registro",
-            "nombre": "Revisión de gimnasio",
-            "descripcion": "Mantenimiento y limpieza de equipos en el gimnasio del hotel."
+          "id": 14,
+          "numero": "114",
+          "tipo": "Individual",
+          "precio_noche": 65,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "r15",
-            "tipo": "registro",
-            "nombre": "Control de ruidos en zonas comunes",
-            "descripcion": "Supervisión de nivel de ruido en pasillos y áreas comunes."
+          "id": 15,
+          "numero": "115",
+          "tipo": "Triple",
+          "precio_noche": 115,
+          "capacidad": 3,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "i1",
-            "tipo": "incidencia",
-            "nombre": "Avería en aire acondicionado",
-            "descripcion": "El aire acondicionado de la habitación no funciona correctamente."
+          "id": 16,
+          "numero": "116",
+          "tipo": "Doble Deluxe",
+          "precio_noche": 120,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "i2",
-            "tipo": "incidencia",
-            "nombre": "Televisión sin señal",
-            "descripcion": "El huésped reporta que la televisión no tiene señal o no enciende."
+          "id": 17,
+          "numero": "117",
+          "tipo": "Suite Premium",
+          "precio_noche": 220,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "i3",
-            "tipo": "incidencia",
-            "nombre": "Fuga de agua en baño",
-            "descripcion": "Se ha detectado una fuga de agua en el baño de la habitación."
+          "id": 18,
+          "numero": "118",
+          "tipo": "Familiar",
+          "precio_noche": 140,
+          "capacidad": 4,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "i4",
-            "tipo": "incidencia",
-            "nombre": "Pérdida de objeto personal",
-            "descripcion": "El huésped ha extraviado un objeto en las instalaciones del hotel."
+          "id": 19,
+          "numero": "119",
+          "tipo": "Doble",
+          "precio_noche": 80,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "i5",
-            "tipo": "incidencia",
-            "nombre": "Ruidos molestos en habitación",
-            "descripcion": "El huésped reporta ruidos excesivos provenientes de otra habitación."
-        },
-        {
-          "id" : "i6",
-            "tipo": "incidencia",
-            "nombre": "Tarjeta de acceso no funciona",
-            "descripcion": "El huésped indica que su tarjeta de habitación no abre la puerta."
-        },
-        {
-          "id" : "i7",
-            "tipo": "incidencia",
-            "nombre": "Avería en ascensor",
-            "descripcion": "El ascensor ha dejado de funcionar y requiere revisión inmediata."
-        },
-        {
-          "id" : "i8",
-            "tipo": "incidencia",
-            "nombre": "Caja fuerte bloqueada",
-            "descripcion": "El huésped no puede abrir la caja fuerte de su habitación."
-        },
-        {
-          "id" : "i9",
-            "tipo": "incidencia",
-            "nombre": "Calefacción defectuosa",
-            "descripcion": "El huésped reporta que la calefacción de su habitación no funciona."
-        },
-        {
-          "id" : "i10",
-            "tipo": "incidencia",
-            "nombre": "Problema de conexión WiFi",
-            "descripcion": "El huésped tiene dificultades para conectarse a la red WiFi del hotel."
-        },
-        {
-          "id" : "i11",
-            "tipo": "incidencia",
-            "nombre": "Mal olor en habitación",
-            "descripcion": "El huésped reporta un olor desagradable en la habitación."
-        },
-        {
-          "id" : "i12",
-            "tipo": "incidencia",
-            "nombre": "Falta de agua caliente",
-            "descripcion": "No hay agua caliente en la ducha de la habitación."
-        },
-        {
-          "id" : "i13",
-            "tipo": "incidencia",
-            "nombre": "Problema con cortinas",
-            "descripcion": "El huésped indica que las cortinas de la habitación están dañadas."
-        },
-        {
-          "id" : "i14",
-            "tipo": "incidencia",
-            "nombre": "Baño atascado",
-            "descripcion": "Se ha detectado un problema de obstrucción en el baño."
-        },
-        {
-          "id" : "i5",
-            "tipo": "incidencia",
-            "nombre": "Puerta de habitación dañada",
-            "descripcion": "La cerradura o la puerta presenta problemas de funcionamiento."
-        },
-        {
-          "id" : "a1",
-            "tipo": "alerta",
-            "nombre": "Emergencia médica de huésped",
-            "descripcion": "Un huésped requiere asistencia médica urgente."
-        },
-        {
-          "id" : "a2",
-            "tipo": "alerta",
-            "nombre": "Corte de energía en el hotel",
-            "descripcion": "Se ha producido un apagón en varias áreas del hotel."
-        },
-        {
-          "id" : "a3",
-            "tipo": "alerta",
-            "nombre": "Discusión fuerte en habitación",
-            "descripcion": "Se reporta una pelea o altercado dentro de una habitación."
-        },
-        {
-          "id" : "a4",
-            "tipo": "alerta",
-            "nombre": "Fuga de gas detectada",
-            "descripcion": "Se ha percibido un fuerte olor a gas en el hotel."
-        },
-        {
-          "id" : "a5",
-            "tipo": "alerta",
-            "nombre": "Persona sospechosa en el hotel",
-            "descripcion": "Se ha identificado a una persona con actitud sospechosa en las instalaciones."
-        },
-        {
-          "id" : "a6",
-            "tipo": "alerta",
-            "nombre": "Principio de incendio en cocina",
-            "descripcion": "Se ha detectado humo en el área de cocina del hotel."
-        },
-        {
-          "id" : "a7",
-            "tipo": "alerta",
-            "nombre": "Huésped con comportamiento agresivo",
-            "descripcion": "Se reporta un huésped alterado o agresivo en el hotel."
-        },
-        {
-          "id" : "a8",
-            "tipo": "alerta",
-            "nombre": "Fallo en alarma de incendios",
-            "descripcion": "El sistema de detección de incendios ha dejado de funcionar."
-        },
-        {
-          "id" : "a9",
-            "tipo": "alerta",
-            "nombre": "Puerta de emergencia bloqueada",
-            "descripcion": "Se ha detectado que una salida de emergencia está obstruida."
-        },
-        {
-          "id" : "a10",
-            "tipo": "alerta",
-            "nombre": "Desperfecto estructural grave",
-            "descripcion": "Se ha detectado una grieta en la estructura del hotel."
-        },
-        {
-          "id" : "a11",
-            "tipo": "alerta",
-            "nombre": "Huésped desaparecido",
-            "descripcion": "Un familiar ha reportado que un huésped no ha regresado al hotel."
-        },
-        {
-          "id" : "a12",
-            "tipo": "alerta",
-            "nombre": "Fuga de agua en calderas",
-            "descripcion": "Se detectó una fuga grave en la sala de calderas del hotel."
-        },
-        {
-          "id" : "a13",
-            "tipo": "alerta",
-            "nombre": "Evacuación por amenaza externa",
-            "descripcion": "Se requiere evacuación del hotel por amenaza externa."
-        },
-        {
-          "id" : "a14",
-            "tipo": "alerta",
-            "nombre": "Derrumbe en zona común",
-            "descripcion": "Se ha producido un derrumbe parcial en una zona del hotel."
-        },
-        {
-          "id" : "a15",
-            "tipo": "alerta",
-            "nombre": "Robos en habitaciones",
-            "descripcion": "Se han reportado robos en varias habitaciones del hotel."
+          "id": 20,
+          "numero": "120",
+          "tipo": "Individual",
+          "precio_noche": 50,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
         }
-    ],
-    "empleados": [
+      ]
+    },
+    {
+      "codigo": "MAL02",
+      "nombre": "Juanillo Málaga Playa",
+      "telefono": "+34 952 654 321",
+      "ubicacion": "Málaga, Paseo Marítimo 45",
+      "habitaciones": [
         {
-          "id" : "1",
-            "nombre": "Manolo Pérez García",
-            "telefono": "+34 600 123 456",
-            "email": "manolo.perez@hoteljuanillo.com",
-            "departamento": "Mantenimiento"
+          "id": 1,
+          "numero": "101",
+          "tipo": "Suite",
+          "precio_noche": 150,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "2",
-            "nombre": "María López Fernández",
-            "telefono": "+34 610 234 567",
-            "email": "maria.lopez@hoteljuanillo.com",
-            "departamento": "Recepción"
+          "id": 2,
+          "numero": "102",
+          "tipo": "Doble",
+          "precio_noche": 90,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "3",
-            "nombre": "Pedro García Sánchez",
-            "telefono": "+34 620 345 678",
-            "email": "pedro.garcia@hoteljuanillo.com",
-            "departamento": "Seguridad"
+          "id": 3,
+          "numero": "103",
+          "tipo": "Individual",
+          "precio_noche": 60,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "4",
-            "nombre": "Carmen Santos Ruíz",
-            "telefono": "+34 630 456 789",
-            "email": "carmen.santos@hoteljuanillo.com",
-            "departamento": "Limpieza"
+          "id": 4,
+          "numero": "104",
+          "tipo": "Familiar",
+          "precio_noche": 120,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Cocina",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "5",
-            "nombre": "Javier Torres Martín",
-            "telefono": "+34 640 567 890",
-            "email": "javier.torres@hoteljuanillo.com",
-            "departamento": "Conserjería"
+          "id": 5,
+          "numero": "105",
+          "tipo": "Suite Ejecutiva",
+          "precio_noche": 200,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "6",
-            "nombre": "Elena Gómez Pérez",
-            "telefono": "+34 650 678 901",
-            "email": "elena.gomez@hoteljuanillo.com",
-            "departamento": "Reservas"
+          "id": 6,
+          "numero": "106",
+          "tipo": "Doble",
+          "precio_noche": 95,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
         },
         {
-          "id" : "7",
-            "nombre": "Antonio Fernández Díaz",
-            "telefono": "+34 660 789 012",
-            "email": "antonio.fernandez@hoteljuanillo.com",
-            "departamento": "Cocina"
+          "id": 7,
+          "numero": "107",
+          "tipo": "Individual",
+          "precio_noche": 55,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
         },
         {
-          "id" : "8",
-            "nombre": "Lucía Méndez Ortiz",
-            "telefono": "+34 670 890 123",
-            "email": "lucia.mendez@hoteljuanillo.com",
-            "departamento": "Atención al cliente"
+          "id": 8,
+          "numero": "108",
+          "tipo": "Triple",
+          "precio_noche": 110,
+          "capacidad": 3,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "9",
-            "nombre": "Fernando Herrera López",
-            "telefono": "+34 680 901 234",
-            "email": "fernando.herrera@hoteljuanillo.com",
-            "departamento": "Gerencia"
+          "id": 9,
+          "numero": "109",
+          "tipo": "Suite",
+          "precio_noche": 180,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Baño privado"
+          ]
         },
         {
-          "id" : "10",
-            "nombre": "Isabel Navarro Gil",
-            "telefono": "+34 690 012 345",
-            "email": "isabel.navarro@hoteljuanillo.com",
-            "departamento": "Marketing"
+          "id": 10,
+          "numero": "110",
+          "tipo": "Doble",
+          "precio_noche": 85,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 11,
+          "numero": "111",
+          "tipo": "Familiar",
+          "precio_noche": 130,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 12,
+          "numero": "112",
+          "tipo": "Doble",
+          "precio_noche": 100,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
+        },
+        {
+          "id": 13,
+          "numero": "113",
+          "tipo": "Suite Lujo",
+          "precio_noche": 250,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 14,
+          "numero": "114",
+          "tipo": "Individual",
+          "precio_noche": 65,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 15,
+          "numero": "115",
+          "tipo": "Triple",
+          "precio_noche": 115,
+          "capacidad": 3,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 16,
+          "numero": "116",
+          "tipo": "Doble Deluxe",
+          "precio_noche": 120,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 17,
+          "numero": "117",
+          "tipo": "Suite Premium",
+          "precio_noche": 220,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 18,
+          "numero": "118",
+          "tipo": "Familiar",
+          "precio_noche": 140,
+          "capacidad": 4,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 19,
+          "numero": "119",
+          "tipo": "Doble",
+          "precio_noche": 80,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 20,
+          "numero": "120",
+          "tipo": "Individual",
+          "precio_noche": 50,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
         }
-    ],
-
-
-    "sucursales": [
+      ]
+    },
+    {
+      "codigo": "MAD01",
+      "nombre": "Juanillo Madrid Gran Vía",
+      "telefono": "+34 911 654 321",
+      "ubicacion": "Madrid, Gran Vía 20",
+      "habitaciones": [
         {
-            "codigo": "MAL01",
-            "nombre": "Juanillo Málaga Centro",
-            "telefono": "+34 952 123 456",
-            "ubicacion": "Málaga, Calle Larios 12",
-            "habitaciones" : [
-              {
-                "id": 1,
-                "numero": "101",
-                "tipo": "Suite",
-                "precio_noche": 150.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 2,
-                "numero": "102",
-                "tipo": "Doble",
-                "precio_noche": 90.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 3,
-                "numero": "103",
-                "tipo": "Individual",
-                "precio_noche": 60.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 4,
-                "numero": "104",
-                "tipo": "Familiar",
-                "precio_noche": 120.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Cocina", "Baño privado"]
-              },
-              {
-                "id": 5,
-                "numero": "105",
-                "tipo": "Suite Ejecutiva",
-                "precio_noche": 200.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 6,
-                "numero": "106",
-                "tipo": "Doble",
-                "precio_noche": 95.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 7,
-                "numero": "107",
-                "tipo": "Individual",
-                "precio_noche": 55.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              },
-              {
-                "id": 8,
-                "numero": "108",
-                "tipo": "Triple",
-                "precio_noche": 110.00,
-                "capacidad": 3,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 9,
-                "numero": "109",
-                "tipo": "Suite",
-                "precio_noche": 180.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Baño privado"]
-              },
-              {
-                "id": 10,
-                "numero": "110",
-                "tipo": "Doble",
-                "precio_noche": 85.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 11,
-                "numero": "111",
-                "tipo": "Familiar",
-                "precio_noche": 130.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 12,
-                "numero": "112",
-                "tipo": "Doble",
-                "precio_noche": 100.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 13,
-                "numero": "113",
-                "tipo": "Suite Lujo",
-                "precio_noche": 250.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 14,
-                "numero": "114",
-                "tipo": "Individual",
-                "precio_noche": 65.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 15,
-                "numero": "115",
-                "tipo": "Triple",
-                "precio_noche": 115.00,
-                "capacidad": 3,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 16,
-                "numero": "116",
-                "tipo": "Doble Deluxe",
-                "precio_noche": 120.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 17,
-                "numero": "117",
-                "tipo": "Suite Premium",
-                "precio_noche": 220.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 18,
-                "numero": "118",
-                "tipo": "Familiar",
-                "precio_noche": 140.00,
-                "capacidad": 4,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 19,
-                "numero": "119",
-                "tipo": "Doble",
-                "precio_noche": 80.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 20,
-                "numero": "120",
-                "tipo": "Individual",
-                "precio_noche": 50.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              }
-            ]
+          "id": 1,
+          "numero": "101",
+          "tipo": "Suite",
+          "precio_noche": 150,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
         },
         {
-            "codigo": "MAL02",
-            "nombre": "Juanillo Málaga Playa",
-            "telefono": "+34 952 654 321",
-            "ubicacion": "Málaga, Paseo Marítimo 45",
-            "habitaciones" : [
-              {
-                "id": 1,
-                "numero": "101",
-                "tipo": "Suite",
-                "precio_noche": 150.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 2,
-                "numero": "102",
-                "tipo": "Doble",
-                "precio_noche": 90.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 3,
-                "numero": "103",
-                "tipo": "Individual",
-                "precio_noche": 60.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 4,
-                "numero": "104",
-                "tipo": "Familiar",
-                "precio_noche": 120.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Cocina", "Baño privado"]
-              },
-              {
-                "id": 5,
-                "numero": "105",
-                "tipo": "Suite Ejecutiva",
-                "precio_noche": 200.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 6,
-                "numero": "106",
-                "tipo": "Doble",
-                "precio_noche": 95.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 7,
-                "numero": "107",
-                "tipo": "Individual",
-                "precio_noche": 55.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              },
-              {
-                "id": 8,
-                "numero": "108",
-                "tipo": "Triple",
-                "precio_noche": 110.00,
-                "capacidad": 3,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 9,
-                "numero": "109",
-                "tipo": "Suite",
-                "precio_noche": 180.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Baño privado"]
-              },
-              {
-                "id": 10,
-                "numero": "110",
-                "tipo": "Doble",
-                "precio_noche": 85.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 11,
-                "numero": "111",
-                "tipo": "Familiar",
-                "precio_noche": 130.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 12,
-                "numero": "112",
-                "tipo": "Doble",
-                "precio_noche": 100.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 13,
-                "numero": "113",
-                "tipo": "Suite Lujo",
-                "precio_noche": 250.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 14,
-                "numero": "114",
-                "tipo": "Individual",
-                "precio_noche": 65.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 15,
-                "numero": "115",
-                "tipo": "Triple",
-                "precio_noche": 115.00,
-                "capacidad": 3,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 16,
-                "numero": "116",
-                "tipo": "Doble Deluxe",
-                "precio_noche": 120.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 17,
-                "numero": "117",
-                "tipo": "Suite Premium",
-                "precio_noche": 220.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 18,
-                "numero": "118",
-                "tipo": "Familiar",
-                "precio_noche": 140.00,
-                "capacidad": 4,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 19,
-                "numero": "119",
-                "tipo": "Doble",
-                "precio_noche": 80.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 20,
-                "numero": "120",
-                "tipo": "Individual",
-                "precio_noche": 50.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              }
-            ]
+          "id": 2,
+          "numero": "102",
+          "tipo": "Doble",
+          "precio_noche": 90,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
         },
         {
-            "codigo": "MAD01",
-            "nombre": "Juanillo Madrid Gran Vía",
-            "telefono": "+34 911 654 321",
-            "ubicacion": "Madrid, Gran Vía 20",
-            "habitaciones" : [
-              {
-                "id": 1,
-                "numero": "101",
-                "tipo": "Suite",
-                "precio_noche": 150.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 2,
-                "numero": "102",
-                "tipo": "Doble",
-                "precio_noche": 90.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 3,
-                "numero": "103",
-                "tipo": "Individual",
-                "precio_noche": 60.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 4,
-                "numero": "104",
-                "tipo": "Familiar",
-                "precio_noche": 120.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Cocina", "Baño privado"]
-              },
-              {
-                "id": 5,
-                "numero": "105",
-                "tipo": "Suite Ejecutiva",
-                "precio_noche": 200.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 6,
-                "numero": "106",
-                "tipo": "Doble",
-                "precio_noche": 95.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 7,
-                "numero": "107",
-                "tipo": "Individual",
-                "precio_noche": 55.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              },
-              {
-                "id": 8,
-                "numero": "108",
-                "tipo": "Triple",
-                "precio_noche": 110.00,
-                "capacidad": 3,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 9,
-                "numero": "109",
-                "tipo": "Suite",
-                "precio_noche": 180.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Baño privado"]
-              },
-              {
-                "id": 10,
-                "numero": "110",
-                "tipo": "Doble",
-                "precio_noche": 85.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 11,
-                "numero": "111",
-                "tipo": "Familiar",
-                "precio_noche": 130.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 12,
-                "numero": "112",
-                "tipo": "Doble",
-                "precio_noche": 100.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 13,
-                "numero": "113",
-                "tipo": "Suite Lujo",
-                "precio_noche": 250.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 14,
-                "numero": "114",
-                "tipo": "Individual",
-                "precio_noche": 65.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 15,
-                "numero": "115",
-                "tipo": "Triple",
-                "precio_noche": 115.00,
-                "capacidad": 3,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 16,
-                "numero": "116",
-                "tipo": "Doble Deluxe",
-                "precio_noche": 120.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 17,
-                "numero": "117",
-                "tipo": "Suite Premium",
-                "precio_noche": 220.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 18,
-                "numero": "118",
-                "tipo": "Familiar",
-                "precio_noche": 140.00,
-                "capacidad": 4,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 19,
-                "numero": "119",
-                "tipo": "Doble",
-                "precio_noche": 80.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 20,
-                "numero": "120",
-                "tipo": "Individual",
-                "precio_noche": 50.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              }
-            ]
+          "id": 3,
+          "numero": "103",
+          "tipo": "Individual",
+          "precio_noche": 60,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
         },
         {
-            "codigo": "MAD02",
-            "nombre": "Juanillo Madrid Aeropuerto",
-            "telefono": "+34 912 987 654",
-            "ubicacion": "Madrid, Avenida de la Hispanidad 5",
-            "habitaciones" : [
-              {
-                "id": 1,
-                "numero": "101",
-                "tipo": "Suite",
-                "precio_noche": 150.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 2,
-                "numero": "102",
-                "tipo": "Doble",
-                "precio_noche": 90.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 3,
-                "numero": "103",
-                "tipo": "Individual",
-                "precio_noche": 60.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 4,
-                "numero": "104",
-                "tipo": "Familiar",
-                "precio_noche": 120.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Cocina", "Baño privado"]
-              },
-              {
-                "id": 5,
-                "numero": "105",
-                "tipo": "Suite Ejecutiva",
-                "precio_noche": 200.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 6,
-                "numero": "106",
-                "tipo": "Doble",
-                "precio_noche": 95.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 7,
-                "numero": "107",
-                "tipo": "Individual",
-                "precio_noche": 55.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              },
-              {
-                "id": 8,
-                "numero": "108",
-                "tipo": "Triple",
-                "precio_noche": 110.00,
-                "capacidad": 3,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 9,
-                "numero": "109",
-                "tipo": "Suite",
-                "precio_noche": 180.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Baño privado"]
-              },
-              {
-                "id": 10,
-                "numero": "110",
-                "tipo": "Doble",
-                "precio_noche": 85.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 11,
-                "numero": "111",
-                "tipo": "Familiar",
-                "precio_noche": 130.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 12,
-                "numero": "112",
-                "tipo": "Doble",
-                "precio_noche": 100.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 13,
-                "numero": "113",
-                "tipo": "Suite Lujo",
-                "precio_noche": 250.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 14,
-                "numero": "114",
-                "tipo": "Individual",
-                "precio_noche": 65.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 15,
-                "numero": "115",
-                "tipo": "Triple",
-                "precio_noche": 115.00,
-                "capacidad": 3,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 16,
-                "numero": "116",
-                "tipo": "Doble Deluxe",
-                "precio_noche": 120.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 17,
-                "numero": "117",
-                "tipo": "Suite Premium",
-                "precio_noche": 220.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 18,
-                "numero": "118",
-                "tipo": "Familiar",
-                "precio_noche": 140.00,
-                "capacidad": 4,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 19,
-                "numero": "119",
-                "tipo": "Doble",
-                "precio_noche": 80.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 20,
-                "numero": "120",
-                "tipo": "Individual",
-                "precio_noche": 50.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              }
-            ]
+          "id": 4,
+          "numero": "104",
+          "tipo": "Familiar",
+          "precio_noche": 120,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Cocina",
+            "Baño privado"
+          ]
         },
         {
-            "codigo": "BCN01",
-            "nombre": "Juanillo Barcelona Rambla",
-            "telefono": "+34 931 987 654",
-            "ubicacion": "Barcelona, La Rambla 32",
-            "habitaciones" : [
-              {
-                "id": 1,
-                "numero": "101",
-                "tipo": "Suite",
-                "precio_noche": 150.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 2,
-                "numero": "102",
-                "tipo": "Doble",
-                "precio_noche": 90.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 3,
-                "numero": "103",
-                "tipo": "Individual",
-                "precio_noche": 60.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 4,
-                "numero": "104",
-                "tipo": "Familiar",
-                "precio_noche": 120.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Cocina", "Baño privado"]
-              },
-              {
-                "id": 5,
-                "numero": "105",
-                "tipo": "Suite Ejecutiva",
-                "precio_noche": 200.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 6,
-                "numero": "106",
-                "tipo": "Doble",
-                "precio_noche": 95.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 7,
-                "numero": "107",
-                "tipo": "Individual",
-                "precio_noche": 55.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              },
-              {
-                "id": 8,
-                "numero": "108",
-                "tipo": "Triple",
-                "precio_noche": 110.00,
-                "capacidad": 3,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 9,
-                "numero": "109",
-                "tipo": "Suite",
-                "precio_noche": 180.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Baño privado"]
-              },
-              {
-                "id": 10,
-                "numero": "110",
-                "tipo": "Doble",
-                "precio_noche": 85.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 11,
-                "numero": "111",
-                "tipo": "Familiar",
-                "precio_noche": 130.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 12,
-                "numero": "112",
-                "tipo": "Doble",
-                "precio_noche": 100.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 13,
-                "numero": "113",
-                "tipo": "Suite Lujo",
-                "precio_noche": 250.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 14,
-                "numero": "114",
-                "tipo": "Individual",
-                "precio_noche": 65.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 15,
-                "numero": "115",
-                "tipo": "Triple",
-                "precio_noche": 115.00,
-                "capacidad": 3,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 16,
-                "numero": "116",
-                "tipo": "Doble Deluxe",
-                "precio_noche": 120.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 17,
-                "numero": "117",
-                "tipo": "Suite Premium",
-                "precio_noche": 220.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 18,
-                "numero": "118",
-                "tipo": "Familiar",
-                "precio_noche": 140.00,
-                "capacidad": 4,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 19,
-                "numero": "119",
-                "tipo": "Doble",
-                "precio_noche": 80.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 20,
-                "numero": "120",
-                "tipo": "Individual",
-                "precio_noche": 50.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              }
-            ]
+          "id": 5,
+          "numero": "105",
+          "tipo": "Suite Ejecutiva",
+          "precio_noche": 200,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
         },
         {
-            "codigo": "BCN02",
-            "nombre": "Juanillo Barcelona Montjuïc",
-            "telefono": "+34 933 456 789",
-            "ubicacion": "Barcelona, Carrer de Montjuïc 15",
-            "habitaciones" : [
-              {
-                "id": 1,
-                "numero": "101",
-                "tipo": "Suite",
-                "precio_noche": 150.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 2,
-                "numero": "102",
-                "tipo": "Doble",
-                "precio_noche": 90.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 3,
-                "numero": "103",
-                "tipo": "Individual",
-                "precio_noche": 60.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 4,
-                "numero": "104",
-                "tipo": "Familiar",
-                "precio_noche": 120.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Cocina", "Baño privado"]
-              },
-              {
-                "id": 5,
-                "numero": "105",
-                "tipo": "Suite Ejecutiva",
-                "precio_noche": 200.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 6,
-                "numero": "106",
-                "tipo": "Doble",
-                "precio_noche": 95.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 7,
-                "numero": "107",
-                "tipo": "Individual",
-                "precio_noche": 55.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              },
-              {
-                "id": 8,
-                "numero": "108",
-                "tipo": "Triple",
-                "precio_noche": 110.00,
-                "capacidad": 3,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 9,
-                "numero": "109",
-                "tipo": "Suite",
-                "precio_noche": 180.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Baño privado"]
-              },
-              {
-                "id": 10,
-                "numero": "110",
-                "tipo": "Doble",
-                "precio_noche": 85.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 11,
-                "numero": "111",
-                "tipo": "Familiar",
-                "precio_noche": 130.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 12,
-                "numero": "112",
-                "tipo": "Doble",
-                "precio_noche": 100.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 13,
-                "numero": "113",
-                "tipo": "Suite Lujo",
-                "precio_noche": 250.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 14,
-                "numero": "114",
-                "tipo": "Individual",
-                "precio_noche": 65.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 15,
-                "numero": "115",
-                "tipo": "Triple",
-                "precio_noche": 115.00,
-                "capacidad": 3,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 16,
-                "numero": "116",
-                "tipo": "Doble Deluxe",
-                "precio_noche": 120.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 17,
-                "numero": "117",
-                "tipo": "Suite Premium",
-                "precio_noche": 220.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 18,
-                "numero": "118",
-                "tipo": "Familiar",
-                "precio_noche": 140.00,
-                "capacidad": 4,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 19,
-                "numero": "119",
-                "tipo": "Doble",
-                "precio_noche": 80.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 20,
-                "numero": "120",
-                "tipo": "Individual",
-                "precio_noche": 50.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              }
-            ]
+          "id": 6,
+          "numero": "106",
+          "tipo": "Doble",
+          "precio_noche": 95,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
         },
         {
-            "codigo": "SEV01",
-            "nombre": "Juanillo Sevilla Centro",
-            "telefono": "+34 955 234 567",
-            "ubicacion": "Sevilla, Plaza Nueva 10",
-            "habitaciones" : [
-              {
-                "id": 1,
-                "numero": "101",
-                "tipo": "Suite",
-                "precio_noche": 150.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 2,
-                "numero": "102",
-                "tipo": "Doble",
-                "precio_noche": 90.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 3,
-                "numero": "103",
-                "tipo": "Individual",
-                "precio_noche": 60.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 4,
-                "numero": "104",
-                "tipo": "Familiar",
-                "precio_noche": 120.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Cocina", "Baño privado"]
-              },
-              {
-                "id": 5,
-                "numero": "105",
-                "tipo": "Suite Ejecutiva",
-                "precio_noche": 200.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 6,
-                "numero": "106",
-                "tipo": "Doble",
-                "precio_noche": 95.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 7,
-                "numero": "107",
-                "tipo": "Individual",
-                "precio_noche": 55.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              },
-              {
-                "id": 8,
-                "numero": "108",
-                "tipo": "Triple",
-                "precio_noche": 110.00,
-                "capacidad": 3,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 9,
-                "numero": "109",
-                "tipo": "Suite",
-                "precio_noche": 180.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Baño privado"]
-              },
-              {
-                "id": 10,
-                "numero": "110",
-                "tipo": "Doble",
-                "precio_noche": 85.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 11,
-                "numero": "111",
-                "tipo": "Familiar",
-                "precio_noche": 130.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 12,
-                "numero": "112",
-                "tipo": "Doble",
-                "precio_noche": 100.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 13,
-                "numero": "113",
-                "tipo": "Suite Lujo",
-                "precio_noche": 250.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 14,
-                "numero": "114",
-                "tipo": "Individual",
-                "precio_noche": 65.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 15,
-                "numero": "115",
-                "tipo": "Triple",
-                "precio_noche": 115.00,
-                "capacidad": 3,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 16,
-                "numero": "116",
-                "tipo": "Doble Deluxe",
-                "precio_noche": 120.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 17,
-                "numero": "117",
-                "tipo": "Suite Premium",
-                "precio_noche": 220.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 18,
-                "numero": "118",
-                "tipo": "Familiar",
-                "precio_noche": 140.00,
-                "capacidad": 4,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 19,
-                "numero": "119",
-                "tipo": "Doble",
-                "precio_noche": 80.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 20,
-                "numero": "120",
-                "tipo": "Individual",
-                "precio_noche": 50.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              }
-            ]
+          "id": 7,
+          "numero": "107",
+          "tipo": "Individual",
+          "precio_noche": 55,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
         },
         {
-            "codigo": "SEV02",
-            "nombre": "Juanillo Sevilla Triana",
-            "telefono": "+34 955 678 901",
-            "ubicacion": "Sevilla, Calle Betis 22",
-            "habitaciones" : [
-              {
-                "id": 1,
-                "numero": "101",
-                "tipo": "Suite",
-                "precio_noche": 150.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 2,
-                "numero": "102",
-                "tipo": "Doble",
-                "precio_noche": 90.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 3,
-                "numero": "103",
-                "tipo": "Individual",
-                "precio_noche": 60.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 4,
-                "numero": "104",
-                "tipo": "Familiar",
-                "precio_noche": 120.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Cocina", "Baño privado"]
-              },
-              {
-                "id": 5,
-                "numero": "105",
-                "tipo": "Suite Ejecutiva",
-                "precio_noche": 200.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 6,
-                "numero": "106",
-                "tipo": "Doble",
-                "precio_noche": 95.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 7,
-                "numero": "107",
-                "tipo": "Individual",
-                "precio_noche": 55.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              },
-              {
-                "id": 8,
-                "numero": "108",
-                "tipo": "Triple",
-                "precio_noche": 110.00,
-                "capacidad": 3,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 9,
-                "numero": "109",
-                "tipo": "Suite",
-                "precio_noche": 180.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Baño privado"]
-              },
-              {
-                "id": 10,
-                "numero": "110",
-                "tipo": "Doble",
-                "precio_noche": 85.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 11,
-                "numero": "111",
-                "tipo": "Familiar",
-                "precio_noche": 130.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 12,
-                "numero": "112",
-                "tipo": "Doble",
-                "precio_noche": 100.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 13,
-                "numero": "113",
-                "tipo": "Suite Lujo",
-                "precio_noche": 250.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 14,
-                "numero": "114",
-                "tipo": "Individual",
-                "precio_noche": 65.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 15,
-                "numero": "115",
-                "tipo": "Triple",
-                "precio_noche": 115.00,
-                "capacidad": 3,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 16,
-                "numero": "116",
-                "tipo": "Doble Deluxe",
-                "precio_noche": 120.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 17,
-                "numero": "117",
-                "tipo": "Suite Premium",
-                "precio_noche": 220.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 18,
-                "numero": "118",
-                "tipo": "Familiar",
-                "precio_noche": 140.00,
-                "capacidad": 4,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 19,
-                "numero": "119",
-                "tipo": "Doble",
-                "precio_noche": 80.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 20,
-                "numero": "120",
-                "tipo": "Individual",
-                "precio_noche": 50.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              }
-            ]
+          "id": 8,
+          "numero": "108",
+          "tipo": "Triple",
+          "precio_noche": 110,
+          "capacidad": 3,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
         },
         {
-            "codigo": "VAL01",
-            "nombre": "Juanillo Valencia Centro",
-            "telefono": "+34 963 789 012",
-            "ubicacion": "Valencia, Calle Colón 18",
-            "habitaciones" : [
-              {
-                "id": 1,
-                "numero": "101",
-                "tipo": "Suite",
-                "precio_noche": 150.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 2,
-                "numero": "102",
-                "tipo": "Doble",
-                "precio_noche": 90.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 3,
-                "numero": "103",
-                "tipo": "Individual",
-                "precio_noche": 60.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 4,
-                "numero": "104",
-                "tipo": "Familiar",
-                "precio_noche": 120.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Cocina", "Baño privado"]
-              },
-              {
-                "id": 5,
-                "numero": "105",
-                "tipo": "Suite Ejecutiva",
-                "precio_noche": 200.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 6,
-                "numero": "106",
-                "tipo": "Doble",
-                "precio_noche": 95.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 7,
-                "numero": "107",
-                "tipo": "Individual",
-                "precio_noche": 55.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              },
-              {
-                "id": 8,
-                "numero": "108",
-                "tipo": "Triple",
-                "precio_noche": 110.00,
-                "capacidad": 3,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 9,
-                "numero": "109",
-                "tipo": "Suite",
-                "precio_noche": 180.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Baño privado"]
-              },
-              {
-                "id": 10,
-                "numero": "110",
-                "tipo": "Doble",
-                "precio_noche": 85.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 11,
-                "numero": "111",
-                "tipo": "Familiar",
-                "precio_noche": 130.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 12,
-                "numero": "112",
-                "tipo": "Doble",
-                "precio_noche": 100.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 13,
-                "numero": "113",
-                "tipo": "Suite Lujo",
-                "precio_noche": 250.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 14,
-                "numero": "114",
-                "tipo": "Individual",
-                "precio_noche": 65.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 15,
-                "numero": "115",
-                "tipo": "Triple",
-                "precio_noche": 115.00,
-                "capacidad": 3,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 16,
-                "numero": "116",
-                "tipo": "Doble Deluxe",
-                "precio_noche": 120.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 17,
-                "numero": "117",
-                "tipo": "Suite Premium",
-                "precio_noche": 220.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 18,
-                "numero": "118",
-                "tipo": "Familiar",
-                "precio_noche": 140.00,
-                "capacidad": 4,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 19,
-                "numero": "119",
-                "tipo": "Doble",
-                "precio_noche": 80.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 20,
-                "numero": "120",
-                "tipo": "Individual",
-                "precio_noche": 50.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              }
-            ]
+          "id": 9,
+          "numero": "109",
+          "tipo": "Suite",
+          "precio_noche": 180,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Baño privado"
+          ]
         },
         {
-            "codigo": "VAL02",
-            "nombre": "Juanillo Valencia Playa",
-            "telefono": "+34 963 890 123",
-            "ubicacion": "Valencia, Avenida de la Malvarrosa 50",
-            "habitaciones" : [
-              {
-                "id": 1,
-                "numero": "101",
-                "tipo": "Suite",
-                "precio_noche": 150.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 2,
-                "numero": "102",
-                "tipo": "Doble",
-                "precio_noche": 90.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 3,
-                "numero": "103",
-                "tipo": "Individual",
-                "precio_noche": 60.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 4,
-                "numero": "104",
-                "tipo": "Familiar",
-                "precio_noche": 120.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Cocina", "Baño privado"]
-              },
-              {
-                "id": 5,
-                "numero": "105",
-                "tipo": "Suite Ejecutiva",
-                "precio_noche": 200.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 6,
-                "numero": "106",
-                "tipo": "Doble",
-                "precio_noche": 95.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 7,
-                "numero": "107",
-                "tipo": "Individual",
-                "precio_noche": 55.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              },
-              {
-                "id": 8,
-                "numero": "108",
-                "tipo": "Triple",
-                "precio_noche": 110.00,
-                "capacidad": 3,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 9,
-                "numero": "109",
-                "tipo": "Suite",
-                "precio_noche": 180.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Baño privado"]
-              },
-              {
-                "id": 10,
-                "numero": "110",
-                "tipo": "Doble",
-                "precio_noche": 85.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 11,
-                "numero": "111",
-                "tipo": "Familiar",
-                "precio_noche": 130.00,
-                "capacidad": 4,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 12,
-                "numero": "112",
-                "tipo": "Doble",
-                "precio_noche": 100.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado", "Escritorio"]
-              },
-              {
-                "id": 13,
-                "numero": "113",
-                "tipo": "Suite Lujo",
-                "precio_noche": 250.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 14,
-                "numero": "114",
-                "tipo": "Individual",
-                "precio_noche": 65.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 15,
-                "numero": "115",
-                "tipo": "Triple",
-                "precio_noche": 115.00,
-                "capacidad": 3,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Baño privado"]
-              },
-              {
-                "id": 16,
-                "numero": "116",
-                "tipo": "Doble Deluxe",
-                "precio_noche": 120.00,
-                "capacidad": 2,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 17,
-                "numero": "117",
-                "tipo": "Suite Premium",
-                "precio_noche": 220.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Aire acondicionado", "Jacuzzi", "Minibar", "Baño privado"]
-              },
-              {
-                "id": 18,
-                "numero": "118",
-                "tipo": "Familiar",
-                "precio_noche": 140.00,
-                "capacidad": 4,
-                "disponible": false,
-                "servicios": ["WiFi", "Televisión", "Cocina", "Balcón", "Baño privado"]
-              },
-              {
-                "id": 19,
-                "numero": "119",
-                "tipo": "Doble",
-                "precio_noche": 80.00,
-                "capacidad": 2,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño privado"]
-              },
-              {
-                "id": 20,
-                "numero": "120",
-                "tipo": "Individual",
-                "precio_noche": 50.00,
-                "capacidad": 1,
-                "disponible": true,
-                "servicios": ["WiFi", "Televisión", "Baño compartido"]
-              }
-            ]
+          "id": 10,
+          "numero": "110",
+          "tipo": "Doble",
+          "precio_noche": 85,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 11,
+          "numero": "111",
+          "tipo": "Familiar",
+          "precio_noche": 130,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 12,
+          "numero": "112",
+          "tipo": "Doble",
+          "precio_noche": 100,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
+        },
+        {
+          "id": 13,
+          "numero": "113",
+          "tipo": "Suite Lujo",
+          "precio_noche": 250,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 14,
+          "numero": "114",
+          "tipo": "Individual",
+          "precio_noche": 65,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 15,
+          "numero": "115",
+          "tipo": "Triple",
+          "precio_noche": 115,
+          "capacidad": 3,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 16,
+          "numero": "116",
+          "tipo": "Doble Deluxe",
+          "precio_noche": 120,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 17,
+          "numero": "117",
+          "tipo": "Suite Premium",
+          "precio_noche": 220,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 18,
+          "numero": "118",
+          "tipo": "Familiar",
+          "precio_noche": 140,
+          "capacidad": 4,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 19,
+          "numero": "119",
+          "tipo": "Doble",
+          "precio_noche": 80,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 20,
+          "numero": "120",
+          "tipo": "Individual",
+          "precio_noche": 50,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "codigo": "MAD02",
+      "nombre": "Juanillo Madrid Aeropuerto",
+      "telefono": "+34 912 987 654",
+      "ubicacion": "Madrid, Avenida de la Hispanidad 5",
+      "habitaciones": [
+        {
+          "id": 1,
+          "numero": "101",
+          "tipo": "Suite",
+          "precio_noche": 150,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 2,
+          "numero": "102",
+          "tipo": "Doble",
+          "precio_noche": 90,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 3,
+          "numero": "103",
+          "tipo": "Individual",
+          "precio_noche": 60,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 4,
+          "numero": "104",
+          "tipo": "Familiar",
+          "precio_noche": 120,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Cocina",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 5,
+          "numero": "105",
+          "tipo": "Suite Ejecutiva",
+          "precio_noche": 200,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 6,
+          "numero": "106",
+          "tipo": "Doble",
+          "precio_noche": 95,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
+        },
+        {
+          "id": 7,
+          "numero": "107",
+          "tipo": "Individual",
+          "precio_noche": 55,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
+        },
+        {
+          "id": 8,
+          "numero": "108",
+          "tipo": "Triple",
+          "precio_noche": 110,
+          "capacidad": 3,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 9,
+          "numero": "109",
+          "tipo": "Suite",
+          "precio_noche": 180,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 10,
+          "numero": "110",
+          "tipo": "Doble",
+          "precio_noche": 85,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 11,
+          "numero": "111",
+          "tipo": "Familiar",
+          "precio_noche": 130,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 12,
+          "numero": "112",
+          "tipo": "Doble",
+          "precio_noche": 100,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
+        },
+        {
+          "id": 13,
+          "numero": "113",
+          "tipo": "Suite Lujo",
+          "precio_noche": 250,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 14,
+          "numero": "114",
+          "tipo": "Individual",
+          "precio_noche": 65,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 15,
+          "numero": "115",
+          "tipo": "Triple",
+          "precio_noche": 115,
+          "capacidad": 3,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 16,
+          "numero": "116",
+          "tipo": "Doble Deluxe",
+          "precio_noche": 120,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 17,
+          "numero": "117",
+          "tipo": "Suite Premium",
+          "precio_noche": 220,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 18,
+          "numero": "118",
+          "tipo": "Familiar",
+          "precio_noche": 140,
+          "capacidad": 4,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 19,
+          "numero": "119",
+          "tipo": "Doble",
+          "precio_noche": 80,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 20,
+          "numero": "120",
+          "tipo": "Individual",
+          "precio_noche": 50,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "BCN01",
+      "nombre": "Juanillo Barcelona Rambla",
+      "telefono": "+34 931 987 654",
+      "ubicacion": "Barcelona, La Rambla 32",
+      "habitaciones": [
+        {
+          "id": 1,
+          "numero": "101",
+          "tipo": "Suite",
+          "precio_noche": 150,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 2,
+          "numero": "102",
+          "tipo": "Doble",
+          "precio_noche": 90,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 3,
+          "numero": "103",
+          "tipo": "Individual",
+          "precio_noche": 60,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 4,
+          "numero": "104",
+          "tipo": "Familiar",
+          "precio_noche": 120,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Cocina",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 5,
+          "numero": "105",
+          "tipo": "Suite Ejecutiva",
+          "precio_noche": 200,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 6,
+          "numero": "106",
+          "tipo": "Doble",
+          "precio_noche": 95,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
+        },
+        {
+          "id": 7,
+          "numero": "107",
+          "tipo": "Individual",
+          "precio_noche": 55,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
+        },
+        {
+          "id": 8,
+          "numero": "108",
+          "tipo": "Triple",
+          "precio_noche": 110,
+          "capacidad": 3,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 9,
+          "numero": "109",
+          "tipo": "Suite",
+          "precio_noche": 180,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 10,
+          "numero": "110",
+          "tipo": "Doble",
+          "precio_noche": 85,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 11,
+          "numero": "111",
+          "tipo": "Familiar",
+          "precio_noche": 130,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 12,
+          "numero": "112",
+          "tipo": "Doble",
+          "precio_noche": 100,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
+        },
+        {
+          "id": 13,
+          "numero": "113",
+          "tipo": "Suite Lujo",
+          "precio_noche": 250,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 14,
+          "numero": "114",
+          "tipo": "Individual",
+          "precio_noche": 65,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 15,
+          "numero": "115",
+          "tipo": "Triple",
+          "precio_noche": 115,
+          "capacidad": 3,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 16,
+          "numero": "116",
+          "tipo": "Doble Deluxe",
+          "precio_noche": 120,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 17,
+          "numero": "117",
+          "tipo": "Suite Premium",
+          "precio_noche": 220,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 18,
+          "numero": "118",
+          "tipo": "Familiar",
+          "precio_noche": 140,
+          "capacidad": 4,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 19,
+          "numero": "119",
+          "tipo": "Doble",
+          "precio_noche": 80,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 20,
+          "numero": "120",
+          "tipo": "Individual",
+          "precio_noche": 50,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "BCN02",
+      "nombre": "Juanillo Barcelona Montjuïc",
+      "telefono": "+34 933 456 789",
+      "ubicacion": "Barcelona, Carrer de Montjuïc 15",
+      "habitaciones": [
+        {
+          "id": 1,
+          "numero": "101",
+          "tipo": "Suite",
+          "precio_noche": 150,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 2,
+          "numero": "102",
+          "tipo": "Doble",
+          "precio_noche": 90,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 3,
+          "numero": "103",
+          "tipo": "Individual",
+          "precio_noche": 60,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 4,
+          "numero": "104",
+          "tipo": "Familiar",
+          "precio_noche": 120,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Cocina",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 5,
+          "numero": "105",
+          "tipo": "Suite Ejecutiva",
+          "precio_noche": 200,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 6,
+          "numero": "106",
+          "tipo": "Doble",
+          "precio_noche": 95,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
+        },
+        {
+          "id": 7,
+          "numero": "107",
+          "tipo": "Individual",
+          "precio_noche": 55,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
+        },
+        {
+          "id": 8,
+          "numero": "108",
+          "tipo": "Triple",
+          "precio_noche": 110,
+          "capacidad": 3,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 9,
+          "numero": "109",
+          "tipo": "Suite",
+          "precio_noche": 180,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 10,
+          "numero": "110",
+          "tipo": "Doble",
+          "precio_noche": 85,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 11,
+          "numero": "111",
+          "tipo": "Familiar",
+          "precio_noche": 130,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 12,
+          "numero": "112",
+          "tipo": "Doble",
+          "precio_noche": 100,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
+        },
+        {
+          "id": 13,
+          "numero": "113",
+          "tipo": "Suite Lujo",
+          "precio_noche": 250,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 14,
+          "numero": "114",
+          "tipo": "Individual",
+          "precio_noche": 65,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 15,
+          "numero": "115",
+          "tipo": "Triple",
+          "precio_noche": 115,
+          "capacidad": 3,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 16,
+          "numero": "116",
+          "tipo": "Doble Deluxe",
+          "precio_noche": 120,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 17,
+          "numero": "117",
+          "tipo": "Suite Premium",
+          "precio_noche": 220,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 18,
+          "numero": "118",
+          "tipo": "Familiar",
+          "precio_noche": 140,
+          "capacidad": 4,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 19,
+          "numero": "119",
+          "tipo": "Doble",
+          "precio_noche": 80,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 20,
+          "numero": "120",
+          "tipo": "Individual",
+          "precio_noche": 50,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SEV01",
+      "nombre": "Juanillo Sevilla Centro",
+      "telefono": "+34 955 234 567",
+      "ubicacion": "Sevilla, Plaza Nueva 10",
+      "habitaciones": [
+        {
+          "id": 1,
+          "numero": "101",
+          "tipo": "Suite",
+          "precio_noche": 150,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 2,
+          "numero": "102",
+          "tipo": "Doble",
+          "precio_noche": 90,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 3,
+          "numero": "103",
+          "tipo": "Individual",
+          "precio_noche": 60,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 4,
+          "numero": "104",
+          "tipo": "Familiar",
+          "precio_noche": 120,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Cocina",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 5,
+          "numero": "105",
+          "tipo": "Suite Ejecutiva",
+          "precio_noche": 200,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 6,
+          "numero": "106",
+          "tipo": "Doble",
+          "precio_noche": 95,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
+        },
+        {
+          "id": 7,
+          "numero": "107",
+          "tipo": "Individual",
+          "precio_noche": 55,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
+        },
+        {
+          "id": 8,
+          "numero": "108",
+          "tipo": "Triple",
+          "precio_noche": 110,
+          "capacidad": 3,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 9,
+          "numero": "109",
+          "tipo": "Suite",
+          "precio_noche": 180,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 10,
+          "numero": "110",
+          "tipo": "Doble",
+          "precio_noche": 85,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 11,
+          "numero": "111",
+          "tipo": "Familiar",
+          "precio_noche": 130,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 12,
+          "numero": "112",
+          "tipo": "Doble",
+          "precio_noche": 100,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
+        },
+        {
+          "id": 13,
+          "numero": "113",
+          "tipo": "Suite Lujo",
+          "precio_noche": 250,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 14,
+          "numero": "114",
+          "tipo": "Individual",
+          "precio_noche": 65,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 15,
+          "numero": "115",
+          "tipo": "Triple",
+          "precio_noche": 115,
+          "capacidad": 3,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 16,
+          "numero": "116",
+          "tipo": "Doble Deluxe",
+          "precio_noche": 120,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 17,
+          "numero": "117",
+          "tipo": "Suite Premium",
+          "precio_noche": 220,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 18,
+          "numero": "118",
+          "tipo": "Familiar",
+          "precio_noche": 140,
+          "capacidad": 4,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 19,
+          "numero": "119",
+          "tipo": "Doble",
+          "precio_noche": 80,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 20,
+          "numero": "120",
+          "tipo": "Individual",
+          "precio_noche": 50,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SEV02",
+      "nombre": "Juanillo Sevilla Triana",
+      "telefono": "+34 955 678 901",
+      "ubicacion": "Sevilla, Calle Betis 22",
+      "habitaciones": [
+        {
+          "id": 1,
+          "numero": "101",
+          "tipo": "Suite",
+          "precio_noche": 150,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 2,
+          "numero": "102",
+          "tipo": "Doble",
+          "precio_noche": 90,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 3,
+          "numero": "103",
+          "tipo": "Individual",
+          "precio_noche": 60,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 4,
+          "numero": "104",
+          "tipo": "Familiar",
+          "precio_noche": 120,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Cocina",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 5,
+          "numero": "105",
+          "tipo": "Suite Ejecutiva",
+          "precio_noche": 200,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 6,
+          "numero": "106",
+          "tipo": "Doble",
+          "precio_noche": 95,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
+        },
+        {
+          "id": 7,
+          "numero": "107",
+          "tipo": "Individual",
+          "precio_noche": 55,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
+        },
+        {
+          "id": 8,
+          "numero": "108",
+          "tipo": "Triple",
+          "precio_noche": 110,
+          "capacidad": 3,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 9,
+          "numero": "109",
+          "tipo": "Suite",
+          "precio_noche": 180,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 10,
+          "numero": "110",
+          "tipo": "Doble",
+          "precio_noche": 85,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 11,
+          "numero": "111",
+          "tipo": "Familiar",
+          "precio_noche": 130,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 12,
+          "numero": "112",
+          "tipo": "Doble",
+          "precio_noche": 100,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
+        },
+        {
+          "id": 13,
+          "numero": "113",
+          "tipo": "Suite Lujo",
+          "precio_noche": 250,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 14,
+          "numero": "114",
+          "tipo": "Individual",
+          "precio_noche": 65,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 15,
+          "numero": "115",
+          "tipo": "Triple",
+          "precio_noche": 115,
+          "capacidad": 3,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 16,
+          "numero": "116",
+          "tipo": "Doble Deluxe",
+          "precio_noche": 120,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 17,
+          "numero": "117",
+          "tipo": "Suite Premium",
+          "precio_noche": 220,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 18,
+          "numero": "118",
+          "tipo": "Familiar",
+          "precio_noche": 140,
+          "capacidad": 4,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 19,
+          "numero": "119",
+          "tipo": "Doble",
+          "precio_noche": 80,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 20,
+          "numero": "120",
+          "tipo": "Individual",
+          "precio_noche": 50,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "VAL01",
+      "nombre": "Juanillo Valencia Centro",
+      "telefono": "+34 963 789 012",
+      "ubicacion": "Valencia, Calle Colón 18",
+      "habitaciones": [
+        {
+          "id": 1,
+          "numero": "101",
+          "tipo": "Suite",
+          "precio_noche": 150,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 2,
+          "numero": "102",
+          "tipo": "Doble",
+          "precio_noche": 90,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 3,
+          "numero": "103",
+          "tipo": "Individual",
+          "precio_noche": 60,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 4,
+          "numero": "104",
+          "tipo": "Familiar",
+          "precio_noche": 120,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Cocina",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 5,
+          "numero": "105",
+          "tipo": "Suite Ejecutiva",
+          "precio_noche": 200,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 6,
+          "numero": "106",
+          "tipo": "Doble",
+          "precio_noche": 95,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
+        },
+        {
+          "id": 7,
+          "numero": "107",
+          "tipo": "Individual",
+          "precio_noche": 55,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
+        },
+        {
+          "id": 8,
+          "numero": "108",
+          "tipo": "Triple",
+          "precio_noche": 110,
+          "capacidad": 3,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 9,
+          "numero": "109",
+          "tipo": "Suite",
+          "precio_noche": 180,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 10,
+          "numero": "110",
+          "tipo": "Doble",
+          "precio_noche": 85,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 11,
+          "numero": "111",
+          "tipo": "Familiar",
+          "precio_noche": 130,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 12,
+          "numero": "112",
+          "tipo": "Doble",
+          "precio_noche": 100,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
+        },
+        {
+          "id": 13,
+          "numero": "113",
+          "tipo": "Suite Lujo",
+          "precio_noche": 250,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 14,
+          "numero": "114",
+          "tipo": "Individual",
+          "precio_noche": 65,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 15,
+          "numero": "115",
+          "tipo": "Triple",
+          "precio_noche": 115,
+          "capacidad": 3,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 16,
+          "numero": "116",
+          "tipo": "Doble Deluxe",
+          "precio_noche": 120,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 17,
+          "numero": "117",
+          "tipo": "Suite Premium",
+          "precio_noche": 220,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 18,
+          "numero": "118",
+          "tipo": "Familiar",
+          "precio_noche": 140,
+          "capacidad": 4,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 19,
+          "numero": "119",
+          "tipo": "Doble",
+          "precio_noche": 80,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 20,
+          "numero": "120",
+          "tipo": "Individual",
+          "precio_noche": 50,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "VAL02",
+      "nombre": "Juanillo Valencia Playa",
+      "telefono": "+34 963 890 123",
+      "ubicacion": "Valencia, Avenida de la Malvarrosa 50",
+      "habitaciones": [
+        {
+          "id": 1,
+          "numero": "101",
+          "tipo": "Suite",
+          "precio_noche": 150,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 2,
+          "numero": "102",
+          "tipo": "Doble",
+          "precio_noche": 90,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 3,
+          "numero": "103",
+          "tipo": "Individual",
+          "precio_noche": 60,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 4,
+          "numero": "104",
+          "tipo": "Familiar",
+          "precio_noche": 120,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Cocina",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 5,
+          "numero": "105",
+          "tipo": "Suite Ejecutiva",
+          "precio_noche": 200,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 6,
+          "numero": "106",
+          "tipo": "Doble",
+          "precio_noche": 95,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
+        },
+        {
+          "id": 7,
+          "numero": "107",
+          "tipo": "Individual",
+          "precio_noche": 55,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
+        },
+        {
+          "id": 8,
+          "numero": "108",
+          "tipo": "Triple",
+          "precio_noche": 110,
+          "capacidad": 3,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 9,
+          "numero": "109",
+          "tipo": "Suite",
+          "precio_noche": 180,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 10,
+          "numero": "110",
+          "tipo": "Doble",
+          "precio_noche": 85,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 11,
+          "numero": "111",
+          "tipo": "Familiar",
+          "precio_noche": 130,
+          "capacidad": 4,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 12,
+          "numero": "112",
+          "tipo": "Doble",
+          "precio_noche": 100,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado",
+            "Escritorio"
+          ]
+        },
+        {
+          "id": 13,
+          "numero": "113",
+          "tipo": "Suite Lujo",
+          "precio_noche": 250,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 14,
+          "numero": "114",
+          "tipo": "Individual",
+          "precio_noche": 65,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 15,
+          "numero": "115",
+          "tipo": "Triple",
+          "precio_noche": 115,
+          "capacidad": 3,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 16,
+          "numero": "116",
+          "tipo": "Doble Deluxe",
+          "precio_noche": 120,
+          "capacidad": 2,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 17,
+          "numero": "117",
+          "tipo": "Suite Premium",
+          "precio_noche": 220,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Aire acondicionado",
+            "Jacuzzi",
+            "Minibar",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 18,
+          "numero": "118",
+          "tipo": "Familiar",
+          "precio_noche": 140,
+          "capacidad": 4,
+          "disponible": false,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Cocina",
+            "Balcón",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 19,
+          "numero": "119",
+          "tipo": "Doble",
+          "precio_noche": 80,
+          "capacidad": 2,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño privado"
+          ]
+        },
+        {
+          "id": 20,
+          "numero": "120",
+          "tipo": "Individual",
+          "precio_noche": 50,
+          "capacidad": 1,
+          "disponible": true,
+          "servicios": [
+            "WiFi",
+            "Televisión",
+            "Baño compartido"
+          ]
+        }
+      ]
+    }
+  ]
 }

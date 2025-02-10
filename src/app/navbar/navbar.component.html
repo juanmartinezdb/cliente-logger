@@ -10,18 +10,18 @@
 
         <!-- Contador de eventos -->
         <div class="d-flex align-items-center gap-3">
-            <a class="d-flex align-items-center btn ">
-                <i class="bi bi-clipboard-check text-primary fs-4 me-1"></i>
-                <span class="fw-bold text-primary">120</span>
-            </a>
-            <a class="d-flex align-items-center btn">
-                <i class="bi bi-exclamation-triangle-fill text-warning fs-4 me-1"></i>
-                <span class="fw-bold text-warning">10</span>
-            </a>
-            <a class="d-flex align-items-center btn me-2">
-                <i class="bi bi-exclamation-diamond-fill text-danger fs-4 me-1"></i>
-                <span class="fw-bold text-danger">0</span>
-            </a>
-        </div>
+          <a class="d-flex align-items-center btn">
+              <i class="bi bi-clipboard-check text-primary fs-4 me-1"></i>
+              <span class="fw-bold text-primary">{{ ordinario }}</span>
+          </a>
+          <a class="d-flex align-items-center btn">
+              <i class="bi bi-exclamation-triangle-fill text-warning fs-4 me-1"></i>
+              <span class="fw-bold text-warning">{{ incidencia }}</span>
+          </a>
+          <a class="d-flex align-items-center btn me-2">
+              <i class="bi bi-exclamation-diamond-fill text-danger fs-4 me-1"></i>
+              <span class="fw-bold text-danger">{{ alerta }}</span>
+          </a>
+      </div>
     </div>
 </nav>
