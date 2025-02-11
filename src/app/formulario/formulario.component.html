@@ -84,45 +84,49 @@
   <div class="card shadow-sm p-3 mb-4">
     <h5 class="card-title">Datos del Evento</h5>
     <div class="mb-3">
-      <label for="tituloE" class="form-label">Título:</label>
-      <input type="text" id="tituloE" class="form-control" placeholder="Título" formControlName="tituloEvento">
-    </div>
-    <div class="mb-3">
-      <label for="descripcionE" class="form-label">Descripción:</label>
-      <textarea id="descripcionE" class="form-control" rows="3" formControlName="descripcionEvento"></textarea>
-    </div>
-    <div class="mb-3">
-      <label class="form-label">Categoría:</label>
-      <div class="d-flex gap-3 flex-warp">
-        <div class="form-check">
-          <input type="radio" id="tipoRegistro" value="registro" name="tipo" class="form-check-input"
-            formControlName="tipo">
-          <label for="tipoRegistro" class="form-check-label"><i class="bi bi-clipboard-check me-2"></i> Registro
-            Ordinario</label>
-        </div>
-        <div class="form-check">
-          <input type="radio" id="tipoIncidencia" value="incidencia" name="tipo" class="form-check-input"
-            formControlName="tipo">
-          <label for="tipoIncidencia" class="form-check-label"><i
-              class="bi bi-exclamation-triangle me-2"></i>Incidencia</label>
-        </div>
-        <div class="form-check">
-          <input type="radio" id="tipoAlerta" name="tipo" value="alerta" class="form-check-input"
-            formControlName="tipo">
-          <label for="tipoAlerta" class="form-check-label"><i
-              class="bi bi-exclamation-diamond-fill me-2"></i>Alerta</label>
+        <label class="form-label">Categoría:</label>
+        <div class="d-flex gap-3 flex-warp">
+          <div class="form-check">
+            <input type="radio" id="tipoRegistro" value="registro" name="tipo" class="form-check-input"
+              formControlName="tipo">
+            <label for="tipoRegistro" class="form-check-label"><i class="bi bi-clipboard-check me-2 bg-primary"></i> Registro
+              Ordinario</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" id="tipoIncidencia" value="incidencia" name="tipo" class="form-check-input"
+              formControlName="tipo">
+            <label for="tipoIncidencia" class="form-check-label"><i
+                class="bi bi-exclamation-triangle me-2 bg-warning"></i>Incidencia</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" id="tipoAlerta" name="tipo" value="alerta" class="form-check-input"
+              formControlName="tipo">
+            <label for="tipoAlerta" class="form-check-label"><i
+                class="bi bi-exclamation-diamond-fill me-2 bg-danger"></i>Alerta</label>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="mb-3">
-      <label for="tipoE" class="form-label">Tipo de Evento:</label>
-      <select id="tipoE" class="form-select" formControlName="predefinidos">
-        <option value="" selected disabled>Selecciona una categoría</option>
-        @for (predef of predefinidas; track $index) {
-        <option [value]="predef.id">{{predef.nombre}}</option>
-        }
-      </select>
-    </div>
+      <div class="mb-3">
+        <label for="tipoE" class="form-label">Eventos predefinidos:</label>
+        <select id="tipoE" name="predefinidos" class="form-select" formControlName="predefinidos">
+          <option value="" selected disabled>Selecciona una categoría</option>
+          @for (predef of predefinidas; track $index) {
+          <option [value]="predef.id">{{predef.nombre}}</option>
+          }
+        </select>
+      </div>
+      @if (!predefinidas){
+
+          <div class="mb-3">
+            <label for="tituloE" class="form-label">Título:</label>
+            <input type="text" id="tituloE" class="form-control" placeholder="Título" formControlName="tituloEvento">
+          </div>
+          <div class="mb-3">
+            <label for="descripcionE" class="form-label">Descripción:</label>
+            <textarea id="descripcionE" class="form-control" rows="3" formControlName="descripcionEvento"></textarea>
+          </div>
+      }
+
     <div class="row">
       <div class="col-md-6 mb-3">
         <label for="fechaE" class="form-label">Fecha:</label>

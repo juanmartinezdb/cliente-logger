@@ -44,7 +44,7 @@ export class FormularioComponent implements OnInit {
       tituloEvento: ['', [Validators.required]],
       descripcionEvento: ['', [Validators.required]],
       tipo: ['', [Validators.required]],
-      predefinidos: ['', [Validators.required]],
+      predefinidos: [''],
       fechaRegistrada: ['', [Validators.required]],
       horaRegistrada: ['', [Validators.required]],
       createdAt: [new Date()]
@@ -67,6 +67,17 @@ export class FormularioComponent implements OnInit {
     })
     this.formH.get('tipo')?.valueChanges.subscribe((t: string) => {
       this.predefinidas = this.predefinidasAll.filter(p => p.tipo === t);
+    })
+    this.formH.get('predefinidos')?.valueChanges.subscribe((t: string) => {
+      const predef = this.predefinidas.find(p=> p.id==t);
+      this.formH.patchValue({
+        tituloEvento: predef?.nombre,
+        descripcionEvento: predef?.descripcion
+      })
+      console.log(predef?.id);
+
+    
+      
     })
   }
 
@@ -93,7 +104,7 @@ export class FormularioComponent implements OnInit {
         habitacionC: (this.formH.value.habitacion).numero,
         agencia: this.formH.value.agencia ? this.formH.value.agenciaT : '',
         telefonoC: this.formH.value.telefono,
-        tituloE: this.formH.value.tituloEvento,
+        tituloE:  this.formH.value.tituloEvento,
         descripcionE: this.formH.value.descripcionEvento,
         categoria: this.formH.value.tipo,
         predefinido: this.formH.value.predefinidos,
@@ -105,7 +116,7 @@ export class FormularioComponent implements OnInit {
       this.datosService.addRegistro(nuevoRegistro)
         .then(() => {
           console.log('Registro agregado:', nuevoRegistro);
-          this.formH.reset(); // Limpiar el formulario tras el envío
+          this.formH.reset();
         })
         .catch(err => console.log('Error:', err));
     } else {
