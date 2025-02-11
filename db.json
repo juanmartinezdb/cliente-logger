@@ -162,6 +162,22 @@
       "fechaE": "2025-02-11",
       "horaE": "12:50",
       "creacion": "2025-02-11T09:29:47.784Z"
+    },
+    {
+      "id": "d0ab",
+      "hotel": "MAL02",
+      "empleado": "2",
+      "nombreC": "Pepe",
+      "apellidoC": "Perez",
+      "agencia": "",
+      "telefonoC": "234353465345",
+      "tituloE": "Fallo en alarma de incendios",
+      "descripcionE": "El sistema de detección de incendios ha dejado de funcionar.",
+      "categoria": "alerta",
+      "predefinido": "a8",
+      "fechaE": "2025-02-06",
+      "horaE": "12:12",
+      "creacion": "2025-02-11T12:13:23.086Z"
     }
   ],
   "predefinidas": [

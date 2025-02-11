@@ -4,6 +4,7 @@ import { Registro } from '../model/registro.model';
 import { Empleado } from '../model/persona.model';
 import { CommonModule } from '@angular/common';
 
+
 @Component({
     selector: 'app-detalles-evento',
     imports: [CommonModule],
