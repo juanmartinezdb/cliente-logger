@@ -1,47 +1,27 @@
-<!-- pasar el acordeon a un cuadro de detalles y un listado de si se pincha se pasan los datos del registro ahí -->
-
 <h2 class="text-center mb-4">Listado de Registros</h2>
 
-<!-- Acordeón de registros -->
-<div class="accordion" id="accordionRegistros">
-  @for (reg of registros; track reg.creacion){
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#reg-'+reg.empleado+'-'+reg.creacion">
-        @if(reg.categoria=="registro"){
-        <i class="bi bi-clipboard-check text-primary me-2"></i>
-        } @else if (reg.categoria=="incidencia") {
-        <i class="bi bi-exclamation-triangle-fill text-warning me-2"></i>
-        } @else {
-        <i class="bi bi-exclamation-diamond-fill text-danger me-2"></i>
+<div class="container">
+  <div class="row">
+    <!-- Listado de registros -->
+    <div class="col-md-4">
+      <ul class="list-group" id="listadoRegistros">
+        @for (reg of registros; track reg.creacion) {
+        <li class="list-group-item d-flex align-items-center" [class.bg-success]="registroSelect===reg" (click)="mostrarDetalles(reg)">
+          @if(reg.categoria=="registro") {
+          <i class="bi bi-clipboard-check text-primary me-2"></i>
+          } @else if (reg.categoria=="incidencia") {
+          <i class="bi bi-exclamation-triangle-fill text-warning me-2"></i>
+          } @else {
+          <i class="bi bi-exclamation-diamond-fill text-danger me-2"></i>
+          }
+          <strong>{{reg.habitacionC}} - {{reg.tituloE}} - </strong>
+        </li>
         }
-        <strong>{{reg.habitacionC}} - {{reg.tituloE}}</strong>
-      </button>
-    </h2>
-    <div id="reg-{{reg.empleado}}-{{reg.creacion}}" class="accordion-collapse collapse" data-bs-parent="#accordionRegistros">
-      <div class="accordion-body">
-        <p><strong>Descripción:</strong> {{reg.descripcionE}}</p>
-        <p><strong>Fecha:</strong> {{reg.fechaE}} - <strong>Hora:</strong> {{reg.horaE}}</p>
-        <p class="text-muted">Fecha Creación: {{reg.creacion}}</p>
-        <hr>
-        <h6>Datos del Empleado</h6>
-
-        <p><strong>Nombre:</strong> {{getEmpleadobyId(reg.empleado).nombre}}</p>
-        <p><strong>Departamento:</strong> {{getEmpleadobyId(reg.empleado).departamento}}</p>
-        <hr>
-        <h6>Datos del Cliente</h6>
-        <p><strong>Nombre:</strong> {{reg.nombreC}}</p>
-        <p><strong>Apellidos:</strong> {{reg.apellidoC}}</p>
-        <p><strong>Agencia:</strong> {{reg.agencia}}</p>
-        <p><strong>Teléfono:</strong> {{reg.telefonoC}}</p>
-        <hr>
-        <h6>Datos del Hotel</h6>
-        <p><strong>Sucursal:</strong> {{reg.hotel}}</p>
-        <button class="btn btn-outline-danger btn-sm"><i class="bi bi-trash"></i> Eliminar</button>
-
-      </div>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <app-detalles-evento [registro]="registroSelect"></app-detalles-evento>
     </div>
   </div>
-  }
-
 </div>
+

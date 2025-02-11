@@ -1,0 +1,27 @@
+@if(registro){
+
+  <div id="detallesEvento-app" class="border rounded p-3">
+    <h5>Detalles del Evento</h5>
+    <p><strong>Descripción:</strong> {{ registro?.descripcionE }}</p>
+    <p><strong>Fecha:</strong> {{ registro?.fechaE }} - <strong>Hora:</strong> {{ registro?.horaE }}</p>
+    <p class="text-muted">Fecha Creación: {{ registro?.creacion }}</p>
+    <hr>
+    <h6>Datos del Empleado</h6>
+    <p><strong>Nombre:</strong> {{ getEmpleadobyId(registro!.empleado)?.nombre }}</p>
+    <p><strong>Departamento:</strong> {{ getEmpleadobyId(registro!.empleado)?.departamento }}</p>
+    <hr>
+    <h6>Datos del Cliente</h6>
+    <p><strong>Nombre:</strong> {{ registro?.nombreC }}</p>
+    <p><strong>Apellidos:</strong> {{ registro?.apellidoC }}</p>
+    <p><strong>Agencia:</strong> {{ registro?.agencia }}</p>
+    <p><strong>Teléfono:</strong> {{ registro?.telefonoC }}</p>
+    <hr>
+    <h6>Datos del Hotel</h6>
+    <p><strong>Sucursal:</strong> {{ registro?.hotel }}</p>
+    <button class="btn btn-outline-danger btn-sm"><i class="bi bi-trash"></i> Eliminar</button>
+  </div>
+} @else {
+  <p class="text-muted">Selecciona un registro para ver los detalles.</p>
+
+}
+
