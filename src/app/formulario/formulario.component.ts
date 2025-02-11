@@ -5,13 +5,14 @@ import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule, JsonPipe } from '@angular/common';
 import { Sucursal } from '../model/sucursal.model';
 import { Habitacion } from '../model/habitacion.model';
-import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Registro } from '../model/registro.model';
 import { RegistroService } from '../services/registros.service';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
     selector: 'app-formulario',
-    imports: [CommonModule, ReactiveFormsModule, JsonPipe],
+    standalone: true,
+    imports: [CommonModule, ReactiveFormsModule],
     templateUrl: './formulario.component.html',
     styleUrl: './formulario.component.css'
 })

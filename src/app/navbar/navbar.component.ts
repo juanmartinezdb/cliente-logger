@@ -2,13 +2,14 @@ import { DatosService } from './../services/datos.service';
 import { Registro } from './../model/registro.model';
 import { CommonModule } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
-import { RouterLink, RouterModule} from '@angular/router';
-import { routes } from '../app.routes';
+import { RouterLink, RouterModule } from '@angular/router';
+
 
 
 @Component({
     selector: 'app-navbar',
-    imports: [CommonModule, RouterModule, RouterLink],
+    standalone: true,
+    imports: [CommonModule, RouterModule,RouterLink],
     templateUrl: './navbar.component.html',
     styleUrl: './navbar.component.css'
 })

@@ -7,7 +7,8 @@ import { DetallesEventoComponent } from '../detalles-evento/detalles-evento.comp
 
 @Component({
     selector: 'app-listado',
-    imports: [CommonModule, JsonPipe, DetallesEventoComponent],
+    standalone: true,
+    imports: [CommonModule, DetallesEventoComponent],
     templateUrl: './listado.component.html',
     styleUrl: './listado.component.css'
 })
