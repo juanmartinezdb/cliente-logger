@@ -109,13 +109,13 @@
       <div class="mb-3">
         <label for="tipoE" class="form-label">Eventos predefinidos:</label>
         <select id="tipoE" name="predefinidos" class="form-select" formControlName="predefinidos">
-          <option value="" selected disabled>Selecciona una categoría</option>
+          <option value="" selected>Susceso Concreto</option>
           @for (predef of predefinidas; track $index) {
           <option [value]="predef.id">{{predef.nombre}}</option>
           }
         </select>
       </div>
-      @if (!predefinidas){
+      @if (!datosEvento){
 
           <div class="mb-3">
             <label for="tituloE" class="form-label">Título:</label>

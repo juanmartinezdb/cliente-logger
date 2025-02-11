@@ -13,7 +13,8 @@
       "predefinido": "r1",
       "fechaE": "2025-02-10",
       "horaE": "14:30",
-      "creacion": "2025-02-10T14:30:00Z"
+      "creacion": "2025-02-10T14:30:00Z",
+      "id": "15db"
     },
     {
       "hotel": "MAD01",
@@ -29,7 +30,8 @@
       "predefinido": "r2",
       "fechaE": "2025-02-09",
       "horaE": "10:00",
-      "creacion": "2025-02-09T10:00:00Z"
+      "creacion": "2025-02-09T10:00:00Z",
+      "id": "8237"
     },
     {
       "hotel": "BCN02",
@@ -44,7 +46,8 @@
       "predefinido": "i1",
       "fechaE": "2025-02-08",
       "horaE": "18:45",
-      "creacion": "2025-02-08T18:45:00Z"
+      "creacion": "2025-02-08T18:45:00Z",
+      "id": "b8ba"
     },
     {
       "hotel": "SEV01",
@@ -59,7 +62,8 @@
       "predefinido": "i3",
       "fechaE": "2025-02-07",
       "horaE": "08:20",
-      "creacion": "2025-02-07T08:20:00Z"
+      "creacion": "2025-02-07T08:20:00Z",
+      "id": "43ed"
     },
     {
       "hotel": "VAL01",
@@ -75,7 +79,8 @@
       "predefinido": "i6",
       "fechaE": "2025-02-06",
       "horaE": "22:10",
-      "creacion": "2025-02-06T22:10:00Z"
+      "creacion": "2025-02-06T22:10:00Z",
+      "id": "75a9"
     },
     {
       "hotel": "MAL02",
@@ -90,7 +95,8 @@
       "predefinido": "a1",
       "fechaE": "2025-02-05",
       "horaE": "03:15",
-      "creacion": "2025-02-05T03:15:00Z"
+      "creacion": "2025-02-05T03:15:00Z",
+      "id": "55cf"
     },
     {
       "id": "701b",
@@ -108,6 +114,54 @@
       "fechaE": "2025-02-06",
       "horaE": "12:33",
       "creacion": "2025-02-10T19:24:50.718Z"
+    },
+    {
+      "id": "e63a",
+      "hotel": "MAD01",
+      "empleado": "2",
+      "nombreC": "Pepe",
+      "apellidoC": "Perez",
+      "agencia": "Patata",
+      "telefonoC": "123214235",
+      "tituloE": "Cambio de toallas",
+      "descripcionE": "El huésped ha solicitado un cambio de toallas en su habitación.",
+      "categoria": "registro",
+      "predefinido": "r2",
+      "fechaE": "2025-02-14",
+      "horaE": "12:12",
+      "creacion": "2025-02-11T09:23:01.655Z"
+    },
+    {
+      "id": "7c47",
+      "hotel": "MAL01",
+      "empleado": "9",
+      "nombreC": "asdfgaset",
+      "apellidoC": "asertawert",
+      "agencia": "",
+      "telefonoC": "2342345346",
+      "tituloE": "Fuga de gas detectada",
+      "descripcionE": "Se ha percibido un fuerte olor a gas en el hotel.",
+      "categoria": "alerta",
+      "predefinido": "a4",
+      "fechaE": "2025-02-26",
+      "horaE": "12:02",
+      "creacion": "2025-02-11T09:23:47.577Z"
+    },
+    {
+      "id": "4e15",
+      "hotel": "MAL01",
+      "empleado": "10",
+      "nombreC": "Pepe",
+      "apellidoC": "Perez",
+      "agencia": "Travel",
+      "telefonoC": "123456789",
+      "tituloE": "Tarjeta de acceso no funciona",
+      "descripcionE": "El huésped indica que su tarjeta de habitación no abre la puerta.",
+      "categoria": "incidencia",
+      "predefinido": "i6",
+      "fechaE": "2025-02-11",
+      "horaE": "12:50",
+      "creacion": "2025-02-11T09:29:47.784Z"
     }
   ],
   "predefinidas": [
@@ -746,7 +800,8 @@
             "Baño compartido"
           ]
         }
-      ]
+      ],
+      "id": "2441"
     },
     {
       "codigo": "MAL02",
@@ -1039,7 +1094,8 @@
             "Baño compartido"
           ]
         }
-      ]
+      ],
+      "id": "941a"
     },
     {
       "codigo": "MAD01",
@@ -1332,7 +1388,8 @@
             "Baño compartido"
           ]
         }
-      ]
+      ],
+      "id": "17e2"
     },
     {
       "codigo": "MAD02",
@@ -1625,7 +1682,8 @@
             "Baño compartido"
           ]
         }
-      ]
+      ],
+      "id": "9065"
     },
     {
       "codigo": "BCN01",
@@ -1918,7 +1976,8 @@
             "Baño compartido"
           ]
         }
-      ]
+      ],
+      "id": "30b3"
     },
     {
       "codigo": "BCN02",
@@ -2211,7 +2270,8 @@
             "Baño compartido"
           ]
         }
-      ]
+      ],
+      "id": "802e"
     },
     {
       "codigo": "SEV01",
@@ -2504,7 +2564,8 @@
             "Baño compartido"
           ]
         }
-      ]
+      ],
+      "id": "cabb"
     },
     {
       "codigo": "SEV02",
@@ -2797,7 +2858,8 @@
             "Baño compartido"
           ]
         }
-      ]
+      ],
+      "id": "3d06"
     },
     {
       "codigo": "VAL01",
@@ -3090,7 +3152,8 @@
             "Baño compartido"
           ]
         }
-      ]
+      ],
+      "id": "13c0"
     },
     {
       "codigo": "VAL02",
@@ -3383,7 +3446,8 @@
             "Baño compartido"
           ]
         }
-      ]
+      ],
+      "id": "29e3"
     }
   ]
 }

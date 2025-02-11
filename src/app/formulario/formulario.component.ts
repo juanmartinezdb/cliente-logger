@@ -26,6 +26,7 @@ export class FormularioComponent implements OnInit {
   formH: FormGroup;
   registro!: Registro;
   agencia: boolean = false;
+  datosEvento: boolean = false;
 
 
   constructor(
@@ -74,9 +75,13 @@ export class FormularioComponent implements OnInit {
         tituloEvento: predef?.nombre,
         descripcionEvento: predef?.descripcion
       })
-      console.log(predef?.id);
+      if(t){
+        this.datosEvento=true;
+      } else {
+        this.datosEvento=false;
 
-    
+      }
+      console.log(predef?.id);  
       
     })
   }
@@ -120,7 +125,7 @@ export class FormularioComponent implements OnInit {
         })
         .catch(err => console.log('Error:', err));
     } else {
-      console.log('Formulario no es válido, revisa los campos.');
+      console.log('Formulario no es válido.');
     }
   }
 }
