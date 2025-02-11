@@ -6,6 +6,15 @@ import {bootstrapApplication, provideProtractorTestingSupport} from '@angular/pl
 import {AppComponent} from './app/app.component';
 import {provideRouter} from '@angular/router';
 import { routes } from './app/app.routes';
+import { importProvidersFrom } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+
 bootstrapApplication(AppComponent, {
-  providers: [provideProtractorTestingSupport(), provideRouter(routes)],
+  providers: [provideProtractorTestingSupport(),
+  provideRouter(routes)
+  , importProvidersFrom(
+    BrowserAnimationsModule,
+    BsDatepickerModule
+)],
 }).catch((err) => console.error(err));

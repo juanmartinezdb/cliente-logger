@@ -8,11 +8,12 @@ import { Habitacion } from '../model/habitacion.model';
 import { Registro } from '../model/registro.model';
 import { RegistroService } from '../services/registros.service';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 @Component({
     selector: 'app-formulario',
     standalone: true,
-    imports: [CommonModule, ReactiveFormsModule],
+    imports: [CommonModule, ReactiveFormsModule, BsDatepickerModule],
     templateUrl: './formulario.component.html',
     styleUrl: './formulario.component.css'
 })
@@ -81,8 +82,8 @@ export class FormularioComponent implements OnInit {
         this.datosEvento=false;
 
       }
-      console.log(predef?.id);  
-      
+      console.log(predef?.id);
+
     })
   }
 
