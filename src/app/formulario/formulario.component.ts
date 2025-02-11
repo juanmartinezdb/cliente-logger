@@ -10,11 +10,10 @@ import { Registro } from '../model/registro.model';
 import { RegistroService } from '../services/registros.service';
 
 @Component({
-  selector: 'app-formulario',
-  standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, JsonPipe],
-  templateUrl: './formulario.component.html',
-  styleUrl: './formulario.component.css'
+    selector: 'app-formulario',
+    imports: [CommonModule, ReactiveFormsModule, JsonPipe],
+    templateUrl: './formulario.component.html',
+    styleUrl: './formulario.component.css'
 })
 export class FormularioComponent implements OnInit {
   empleados: Empleado[] = [];

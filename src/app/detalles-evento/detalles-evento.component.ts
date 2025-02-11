@@ -5,11 +5,10 @@ import { Empleado } from '../model/persona.model';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-detalles-evento',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './detalles-evento.component.html',
-  styleUrl: './detalles-evento.component.css'
+    selector: 'app-detalles-evento',
+    imports: [CommonModule],
+    templateUrl: './detalles-evento.component.html',
+    styleUrl: './detalles-evento.component.css'
 })
 export class DetallesEventoComponent implements OnInit{
 @Input() registro: Registro | null = null;

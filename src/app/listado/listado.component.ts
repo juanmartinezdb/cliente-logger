@@ -6,11 +6,10 @@ import { Empleado } from '../model/persona.model';
 import { DetallesEventoComponent } from '../detalles-evento/detalles-evento.component';
 
 @Component({
-  selector: 'app-listado',
-  standalone: true,
-  imports: [CommonModule, JsonPipe, DetallesEventoComponent],
-  templateUrl: './listado.component.html',
-  styleUrl: './listado.component.css'
+    selector: 'app-listado',
+    imports: [CommonModule, JsonPipe, DetallesEventoComponent],
+    templateUrl: './listado.component.html',
+    styleUrl: './listado.component.css'
 })
 export class ListadoComponent implements OnInit {
   registros: Registro[] = [];
