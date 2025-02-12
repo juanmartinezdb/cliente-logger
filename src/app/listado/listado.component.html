@@ -3,7 +3,7 @@
 <div class="container">
   <div class="row">
     <!-- Listado de registros -->
-    <div class="col-md-4">
+    <div class="col-md-5">
       <ul class="list-group" id="listadoRegistros">
         @for (reg of registros; track reg.creacion) {
         <li class="list-group-item d-flex align-items-center" [class.bg-success]="registroSelect===reg" (click)="mostrarDetalles(reg)">
@@ -14,12 +14,12 @@
           } @else {
           <i class="bi bi-exclamation-diamond-fill text-danger me-2"></i>
           }
-          <strong>{{reg.habitacionC}} - {{reg.tituloE}} - </strong>
+          <strong>{{reg.habitacionC}} - {{reg.tituloE}} </strong>
         </li>
         }
       </ul>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-7">
       <app-detalles-evento [registro]="registroSelect"></app-detalles-evento>
     </div>
   </div>

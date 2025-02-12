@@ -57,9 +57,16 @@ export class FormularioComponent implements OnInit {
     this.datosService.getAllEmpleados().then((empleados: Empleado[]) => {
       this.empleados = empleados;
     });
-    this.datosService.getAllSucursales().then((sucursales: Sucursal[]) => {
-      this.sucursales = sucursales;
-    });
+    this.datosService.getAllSucursales().subscribe((value)=> {
+      if (value!=null){
+        this.sucursales = value;
+      }
+      console.log("patata");
+
+    })
+    // this.datosService.getAllSucursales().then((sucursales: Sucursal[]) => {
+    //   this.sucursales = sucursales;
+    // });
     this.datosService.getAllPredefinidas().then((predefinida: Predefinida[]) => {
       this.predefinidasAll = predefinida;
     });
