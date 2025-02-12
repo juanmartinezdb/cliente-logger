@@ -16,54 +16,59 @@ export class DatosService {
   private predefinidasUrl = 'http://localhost:3000/predefinidas';
   private empleadosUrl = 'http://localhost:3000/empleados';
   private sucursalesUrl = 'http://localhost:3000/sucursales';
-  private registrosUrl =  'http://localhost:3000/registros';
+  private registrosUrl = 'http://localhost:3000/registros';
 
   //preguntar por como van los observables y revisar
   private registrosSubject = new BehaviorSubject<Registro[]>([]);
   registros$: Observable<Registro[]> = this.registrosSubject.asObservable();
 
   http = inject(HttpClient);
-  constructor(){
+  constructor() {
   }
+  getAllEmpleados = () => this.http.get<Empleado[]>(this.empleadosUrl);
+  getAllSucursales = () => this.http.get<Sucursal[]>(this.sucursalesUrl);
+  getAllPredefinidas = () => this.http.get<Predefinida[]>(this.predefinidasUrl);
+  getAllRegistros = () => this.http.get<Registro[]>(this.registrosUrl); //se supone que ya me devuelve un observable
+addRegistro= (nuevoRegistro: Registro) => this.http.post(this.registrosUrl, nuevoRegistro);
 
-  async getAllPredefinidas(): Promise<Predefinida[]> {
-    const data = await fetch(this.predefinidasUrl);
-    return (await data.json()) ?? [];
-  }
 
-  async getAllEmpleados(): Promise<Empleado[]> {
-    const data = await fetch(this.empleadosUrl);
-    return (await data.json()) ?? [];
-  }
-getAllSucursales(){
-  return this.http.get<Sucursal[]>(this.sucursalesUrl);
-}
+  // async getAllPredefinidas(): Promise<Predefinida[]> {
+  //   const data = await fetch(this.predefinidasUrl);
+  //   return (await data.json()) ?? [];
+  // }
+
+  // async getAllEmpleados(): Promise<Empleado[]> {
+  //   const data = await fetch(this.empleadosUrl);
+  //   return (await data.json()) ?? [];
+  // }
   // async getAllSucursales(): Promise<Sucursal[]> {
   //   const data = await fetch(this.sucursalesUrl);
   //   return (await data.json()) ?? [];
   // }
-  async getAllRegistros(): Promise<Registro[]> {
-    const data = await fetch(this.registrosUrl);
-    const registros = (await data.json()) ?? [];
-    this.registrosSubject.next(registros);
-    return registros;
-  }
+
+
+  // async getAllRegistros(): Promise<Registro[]> {
+  //   const data = await fetch(this.registrosUrl);
+  //   const registros = (await data.json()) ?? [];
+  //   this.registrosSubject.next(registros);
+  //   return registros;
+  // }
 
   //cambiar a httpClient
-  async addRegistro(nuevoRegistro: Registro): Promise<void> {
-    const response = await fetch(this.registrosUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(nuevoRegistro)
-    });
+  // async addRegistro(nuevoRegistro: Registro): Promise<void> {
+  //   const response = await fetch(this.registrosUrl, {
+  //     method: 'POST',
+  //     headers: { 'Content-Type': 'application/json' },
+  //     body: JSON.stringify(nuevoRegistro)
+  //   });
 
-    if (response.ok) {
-      const registrosActualizados = [...this.registrosSubject.getValue(), nuevoRegistro];
-      this.registrosSubject.next(registrosActualizados);
-    } else {
-      console.error('Error al agregar registro');
-    }
-  }
+  //   if (response.ok) {
+  //     const registrosActualizados = [...this.registrosSubject.getValue(), nuevoRegistro];
+  //     this.registrosSubject.next(registrosActualizados);
+  //   } else {
+  //     console.error('Error al agregar registro');
+  //   }
+  // }
 
 }
 
