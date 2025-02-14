@@ -1,3 +1,4 @@
+import { Registro } from './../model/registro.model';
 import { Predefinida } from './../model/predefinida.model';
 import { DatosService } from './../services/datos.service';
 import { Empleado } from './../model/persona.model';
@@ -5,20 +6,19 @@ import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule, JsonPipe } from '@angular/common';
 import { Sucursal } from '../model/sucursal.model';
 import { Habitacion } from '../model/habitacion.model';
-import { Registro } from '../model/registro.model';
-import { RegistroService } from '../services/registros.service';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 @Component({
-    selector: 'app-formulario',
-    standalone: true,
-    imports: [CommonModule, ReactiveFormsModule, BsDatepickerModule],
-    templateUrl: './formulario.component.html',
-    styleUrl: './formulario.component.css'
+  selector: 'app-formulario',
+  standalone: true,
+  imports: [CommonModule, ReactiveFormsModule, BsDatepickerModule],
+  templateUrl: './formulario.component.html',
+  styleUrl: './formulario.component.css'
 })
 export class FormularioComponent implements OnInit {
   empleados: Empleado[] = [];
+  // registros: Registro[] = []; //catetada como un templo parte 1
   sucursales: Sucursal[] = [];
   predefinidas: Predefinida[] = [];
   predefinidasAll: Predefinida[] = [];
@@ -54,22 +54,21 @@ export class FormularioComponent implements OnInit {
 
   }
   ngOnInit(): void {
-    this.datosService.getAllEmpleados().then((empleados: Empleado[]) => {
-      this.empleados = empleados;
-    });
-    this.datosService.getAllSucursales().subscribe((value)=> {
-      if (value!=null){
-        this.sucursales = value;
-      }
-      console.log("patata");
+    this.datosService.getAllEmpleados().subscribe(value => this.empleados = value);
+    this.datosService.getAllSucursales().subscribe(value => this.sucursales = value);
+    this.datosService.getAllPredefinidas().subscribe(value => this.predefinidasAll = value);
+    // this.datosService.getAllRegistros().subscribe(value => this.registros = value); //catetada como un templo parte 2
 
-    })
+
+    // this.datosService.getAllEmpleados().then((empleados: Empleado[]) => {
+    //   this.empleados = empleados;
+    // });
     // this.datosService.getAllSucursales().then((sucursales: Sucursal[]) => {
     //   this.sucursales = sucursales;
     // });
-    this.datosService.getAllPredefinidas().then((predefinida: Predefinida[]) => {
-      this.predefinidasAll = predefinida;
-    });
+    // this.datosService.getAllPredefinidas().then((predefinida: Predefinida[]) => {
+    //   this.predefinidasAll = predefinida;
+    // });
 
     this.formH.get('nombreHotel')?.valueChanges.subscribe((n: string) => {
       this.habitaciones = this.sucursales.find(s => s.codigo === n)!.habitaciones;
@@ -78,15 +77,15 @@ export class FormularioComponent implements OnInit {
       this.predefinidas = this.predefinidasAll.filter(p => p.tipo === t);
     })
     this.formH.get('predefinidos')?.valueChanges.subscribe((t: string) => {
-      const predef = this.predefinidas.find(p=> p.id==t);
+      const predef = this.predefinidas.find(p => p.id == t);
       this.formH.patchValue({
         tituloEvento: predef?.nombre,
         descripcionEvento: predef?.descripcion
       })
-      if(t){
-        this.datosEvento=true;
+      if (t) {
+        this.datosEvento = true;
       } else {
-        this.datosEvento=false;
+        this.datosEvento = false;
 
       }
       console.log(predef?.id);
@@ -117,7 +116,7 @@ export class FormularioComponent implements OnInit {
         habitacionC: (this.formH.value.habitacion).numero,
         agencia: this.formH.value.agencia ? this.formH.value.agenciaT : '',
         telefonoC: this.formH.value.telefono,
-        tituloE:  this.formH.value.tituloEvento,
+        tituloE: this.formH.value.tituloEvento,
         descripcionE: this.formH.value.descripcionEvento,
         categoria: this.formH.value.tipo,
         predefinido: this.formH.value.predefinidos,
@@ -126,14 +125,18 @@ export class FormularioComponent implements OnInit {
         creacion: now
       };
 
-      this.datosService.addRegistro(nuevoRegistro)
-        .then(() => {
-          console.log('Registro agregado:', nuevoRegistro);
-          this.formH.reset();
-        })
-        .catch(err => console.log('Error:', err));
-    } else {
-      console.log('Formulario no es válido.');
+      this.datosService.addRegistro(nuevoRegistro).subscribe();
+  //     this.datosService.addRegistro(nuevoRegistro)
+  //       .then(() => {
+  //         console.log('Registro agregado:', nuevoRegistro);
+  //         this.formH.reset();
+  //       })
+  //       .catch(err => console.log('Error:', err));
+  //   } else {
+  //     console.log('Formulario no es válido.');
+  //   }
+  // }
+  // this.datosService.getAllEmpleados().subscribe(value => this.empleados = value);
     }
   }
 }

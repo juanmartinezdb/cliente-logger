@@ -19,9 +19,10 @@ empleados: Empleado[] = [];
 
 ngOnInit(): void {
 
-  this.datosService.getAllEmpleados().then((empl: Empleado[]) => {
-    this.empleados = empl;
-  });
+  this.datosService.getAllEmpleados().subscribe(value => this.empleados = value);
+  // this.datosService.getAllEmpleados().then((empl: Empleado[]) => {
+  //   this.empleados = empl;
+  // });
 
 }
 

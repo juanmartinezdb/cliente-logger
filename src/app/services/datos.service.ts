@@ -3,7 +3,7 @@ import { Predefinida } from '../model/predefinida.model';
 import { Empleado } from '../model/persona.model';
 import { Sucursal } from '../model/sucursal.model';
 import { Registro } from '../model/registro.model';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable, tap } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
 
@@ -28,9 +28,19 @@ export class DatosService {
   getAllEmpleados = () => this.http.get<Empleado[]>(this.empleadosUrl);
   getAllSucursales = () => this.http.get<Sucursal[]>(this.sucursalesUrl);
   getAllPredefinidas = () => this.http.get<Predefinida[]>(this.predefinidasUrl);
-  getAllRegistros = () => this.http.get<Registro[]>(this.registrosUrl); //se supone que ya me devuelve un observable
-addRegistro= (nuevoRegistro: Registro) => this.http.post(this.registrosUrl, nuevoRegistro);
 
+  //con httpCliente no tengo otra forma de hacerlo que no sea con el pipe y el tap
+  //si no lo hago asi no me escucha bien el contador de navBar, si acaso le busco otra logica para
+  //pillar los contadores
+  getAllRegistros = () => {
+    return this.http.get<Registro[]>(this.registrosUrl).pipe(
+      tap(registros => this.registrosSubject.next(registros))
+    );
+  };
+
+  addRegistro = (nuevoRegistro: Registro) => this.http.post(this.registrosUrl, nuevoRegistro);
+
+  //deleteRegistro.
 
   // async getAllPredefinidas(): Promise<Predefinida[]> {
   //   const data = await fetch(this.predefinidasUrl);
