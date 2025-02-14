@@ -25,8 +25,6 @@ ngOnInit(): void {
   // });
 
 }
-
-
 getEmpleadobyId(id: string) : Empleado {
   return this.empleados.find(e=> (e.id.toString())==id)!;
 }
