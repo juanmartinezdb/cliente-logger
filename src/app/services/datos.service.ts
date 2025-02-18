@@ -40,45 +40,9 @@ export class DatosService {
 
   addRegistro = (nuevoRegistro: Registro) => this.http.post(this.registrosUrl, nuevoRegistro);
 
-  //deleteRegistro.
-
-  // async getAllPredefinidas(): Promise<Predefinida[]> {
-  //   const data = await fetch(this.predefinidasUrl);
-  //   return (await data.json()) ?? [];
-  // }
-
-  // async getAllEmpleados(): Promise<Empleado[]> {
-  //   const data = await fetch(this.empleadosUrl);
-  //   return (await data.json()) ?? [];
-  // }
-  // async getAllSucursales(): Promise<Sucursal[]> {
-  //   const data = await fetch(this.sucursalesUrl);
-  //   return (await data.json()) ?? [];
-  // }
+  deleteRegistro = (CreateAt)=>  ;
 
 
-  // async getAllRegistros(): Promise<Registro[]> {
-  //   const data = await fetch(this.registrosUrl);
-  //   const registros = (await data.json()) ?? [];
-  //   this.registrosSubject.next(registros);
-  //   return registros;
-  // }
-
-  //cambiar a httpClient
-  // async addRegistro(nuevoRegistro: Registro): Promise<void> {
-  //   const response = await fetch(this.registrosUrl, {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/json' },
-  //     body: JSON.stringify(nuevoRegistro)
-  //   });
-
-  //   if (response.ok) {
-  //     const registrosActualizados = [...this.registrosSubject.getValue(), nuevoRegistro];
-  //     this.registrosSubject.next(registrosActualizados);
-  //   } else {
-  //     console.error('Error al agregar registro');
-  //   }
-  // }
 
 }
 
