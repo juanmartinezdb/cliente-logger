@@ -3,22 +3,22 @@ import { Empleado } from "./persona.model";
 import { Predefinida } from "./predefinida.model";
 
 export interface Registro {
+  id: string;
+  hotel: string;
+  empleado: string;
 
-    hotel: string;
-    empleado: string;
+  nombreC: string;
+  apellidoC: string;
+  habitacionC: Habitacion;
+  agencia?: string;
+  telefonoC: string;
 
-    nombreC: string;
-    apellidoC: string;
-    habitacionC: Habitacion;
-    agencia?: string;
-    telefonoC: string;
+  tituloE: string;
+  descripcionE: string;
+  categoria: 'registro' | 'incidencia' | 'alerta';
+  predefinido: Predefinida;
+  fechaE: string;
+  horaE: string;
 
-    tituloE: string;
-    descripcionE: string;
-    categoria: 'registro' | 'incidencia' | 'alerta';
-    predefinido: Predefinida;
-    fechaE: string;
-    horaE: string;
-
-    creacion: Date;
-  }
+  creacion: Date;
+}

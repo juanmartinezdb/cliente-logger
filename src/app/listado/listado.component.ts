@@ -24,11 +24,7 @@ export class ListadoComponent implements OnInit {
 
 
   ngOnInit(): void {
-this.datosService.getAllRegistros().subscribe((value: Registro[]) => this.registros = value);
-    // this.datosService.getAllRegistros().then((reg: Registro[]) => {
-    //   this.registros = reg;
-    // });
-
+this.datosService.registros$.subscribe( r => this.registros = r);
   }
 
 

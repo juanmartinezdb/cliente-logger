@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   title = 'Log';
 
   ngOnInit(): void {
-    this.datosService.getAllRegistros().subscribe(value => this.registros = value); //catetada como un templo parte 2 (preguntar)
+    // this.datosService.getAllRegistros().subscribe(value => this.registros = value); //catetada como un templo parte 2 (preguntar)
   }
 
 }

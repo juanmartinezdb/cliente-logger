@@ -18,7 +18,7 @@
     <hr>
     <h6>Datos del Hotel</h6>
     <p><strong>Sucursal:</strong> {{ registro.hotel }}</p>
-    <button class="btn btn-outline-danger btn-sm"><i class="bi bi-trash"></i> Eliminar</button>
+    <button class="btn btn-outline-danger btn-sm" (click)="borrar(registro.id)"><i class="bi bi-trash"></i> Eliminar</button>
   </div>
 } @else {
   <p class="text-muted">Selecciona un registro para ver los detalles.</p>

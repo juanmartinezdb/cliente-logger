@@ -24,6 +24,7 @@ export class DatosService {
 
   http = inject(HttpClient);
   constructor() {
+this.cargarRegistros()
   }
   getAllEmpleados = () => this.http.get<Empleado[]>(this.empleadosUrl);
   getAllSucursales = () => this.http.get<Sucursal[]>(this.sucursalesUrl);
@@ -32,55 +33,24 @@ export class DatosService {
   //con httpCliente no tengo otra forma de hacerlo que no sea con el pipe y el tap
   //si no lo hago asi no me escucha bien el contador de navBar, si acaso le busco otra logica para
   //pillar los contadores
-  getAllRegistros = () => {
-    return this.http.get<Registro[]>(this.registrosUrl).pipe(
-      tap(registros => this.registrosSubject.next(registros))
-    );
-  };
+  cargarRegistros(): void {
+    this.http.get<Registro[]>(this.registrosUrl).subscribe({
+      next: registros => this.registrosSubject.next(registros),
+      error: err => console.error("Error al obtener registros:", err)
+    });
+  }
 
   addRegistro = (nuevoRegistro: Registro) => this.http.post(this.registrosUrl, nuevoRegistro);
 
-  //deleteRegistro.
-
-  // async getAllPredefinidas(): Promise<Predefinida[]> {
-  //   const data = await fetch(this.predefinidasUrl);
-  //   return (await data.json()) ?? [];
-  // }
-
-  // async getAllEmpleados(): Promise<Empleado[]> {
-  //   const data = await fetch(this.empleadosUrl);
-  //   return (await data.json()) ?? [];
-  // }
-  // async getAllSucursales(): Promise<Sucursal[]> {
-  //   const data = await fetch(this.sucursalesUrl);
-  //   return (await data.json()) ?? [];
-  // }
-
-
-  // async getAllRegistros(): Promise<Registro[]> {
-  //   const data = await fetch(this.registrosUrl);
-  //   const registros = (await data.json()) ?? [];
-  //   this.registrosSubject.next(registros);
-  //   return registros;
-  // }
-
-  //cambiar a httpClient
-  // async addRegistro(nuevoRegistro: Registro): Promise<void> {
-  //   const response = await fetch(this.registrosUrl, {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/json' },
-  //     body: JSON.stringify(nuevoRegistro)
-  //   });
-
-  //   if (response.ok) {
-  //     const registrosActualizados = [...this.registrosSubject.getValue(), nuevoRegistro];
-  //     this.registrosSubject.next(registrosActualizados);
-  //   } else {
-  //     console.error('Error al agregar registro');
-  //   }
-  // }
+  borrarRegistro(id: string): void {
+    this.http.delete(`${this.registrosUrl}/${id}`).subscribe({
+      next: () => {
+        console.log(`Registro con ID ${id} eliminado`);
+        this.cargarRegistros();
+      },
+      error: err => console.error("Error al eliminar el registro:", err)
+    });
+  }
 
 }
 
-//cambiar a httpClient y ver como funcionan las funciones como observables
-//probar si hay errores, y como controla los catch si devuelve un null o undefinded

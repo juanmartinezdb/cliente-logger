@@ -25,9 +25,6 @@ export class NavbarComponent implements OnInit {
     this.datosService.registros$.subscribe((registros: Registro[]) => {
       this.contarCategorias(registros);
     });
-
-
-    this.datosService.getAllRegistros();
   }
 
   contarCategorias(registros: Registro[]): void {

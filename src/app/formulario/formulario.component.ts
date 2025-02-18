@@ -28,6 +28,7 @@ export class FormularioComponent implements OnInit {
   registro!: Registro;
   agencia: boolean = false;
   datosEvento: boolean = false;
+  registrosLista: Registro[] = [];
 
 
   constructor(
@@ -57,18 +58,8 @@ export class FormularioComponent implements OnInit {
     this.datosService.getAllEmpleados().subscribe(value => this.empleados = value);
     this.datosService.getAllSucursales().subscribe(value => this.sucursales = value);
     this.datosService.getAllPredefinidas().subscribe(value => this.predefinidasAll = value);
-    // this.datosService.getAllRegistros().subscribe(value => this.registros = value); //catetada como un templo parte 2
+    this.datosService.registros$.subscribe ( r => this.registrosLista = r);
 
-
-    // this.datosService.getAllEmpleados().then((empleados: Empleado[]) => {
-    //   this.empleados = empleados;
-    // });
-    // this.datosService.getAllSucursales().then((sucursales: Sucursal[]) => {
-    //   this.sucursales = sucursales;
-    // });
-    // this.datosService.getAllPredefinidas().then((predefinida: Predefinida[]) => {
-    //   this.predefinidasAll = predefinida;
-    // });
 
     this.formH.get('nombreHotel')?.valueChanges.subscribe((n: string) => {
       this.habitaciones = this.sucursales.find(s => s.codigo === n)!.habitaciones;
@@ -104,16 +95,19 @@ export class FormularioComponent implements OnInit {
     this.agencia = check;
 
   }
+
+
   submit() {
     if (this.formH.valid) {
       const now = new Date();
 
       const nuevoRegistro: Registro = {
+        id: (Number(this.registrosLista[this.registrosLista.length-1].id)+1).toString(),
         hotel: this.formH.value.nombreHotel,
         empleado: this.formH.value.empleado,
         nombreC: this.formH.value.nombreCliente,
         apellidoC: this.formH.value.apellidosCliente,
-        habitacionC: (this.formH.value.habitacion).numero,
+        habitacionC: this.formH.value.habitacion,
         agencia: this.formH.value.agencia ? this.formH.value.agenciaT : '',
         telefonoC: this.formH.value.telefono,
         tituloE: this.formH.value.tituloEvento,
@@ -124,19 +118,10 @@ export class FormularioComponent implements OnInit {
         horaE: this.formH.value.horaRegistrada,
         creacion: now
       };
+      console.log(this.formH.value);
+      console.log("Registro a enviar:", nuevoRegistro);
 
       this.datosService.addRegistro(nuevoRegistro).subscribe();
-  //     this.datosService.addRegistro(nuevoRegistro)
-  //       .then(() => {
-  //         console.log('Registro agregado:', nuevoRegistro);
-  //         this.formH.reset();
-  //       })
-  //       .catch(err => console.log('Error:', err));
-  //   } else {
-  //     console.log('Formulario no es válido.');
-  //   }
-  // }
-  // this.datosService.getAllEmpleados().subscribe(value => this.empleados = value);
     }
   }
 }
